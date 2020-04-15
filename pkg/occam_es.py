@@ -20,19 +20,20 @@ class Occam_es:
         actions =[]
         with open(occam_data) as json_file:
             data = json.load(json_file)
-            i = 1
             for line in data:
                 entry = {
                 ###########TODO acutally fomat for occam
                     '_index': 'occam_index',
                     # '_type': 'occam_obj',
-                    '_id': i,
-                    'title': line,
-                    'body': data[line].get('description'),
+                    'href': line,
+                    'name': data[line].get('name'),
+                    'type': data[line].get('type'),
+                    'architecture': data[line].get('architecture'), 
+                    'environment': data[line].get('enviorment'),
+                    'summary': data[line].get('summary'),
                 }
                 actions.append(entry)
                 # es.index(index="games", doc_type="game_info", id=index_val, body=data[line])
-                i += 1
             helpers.bulk(self.es, actions)
 
     def add_new_obj(self, new_obj, index_name='occam_index'):
@@ -45,13 +46,11 @@ class Occam_es:
         # res = self.es.search(index=index_name, body={"from":0,"size":10,"query":{"match":{"description":search_input}}})
         res = elasticsearch_dsl.Search(using=self.es, index=index_name)
         print(res.count())
-        q = elasticsearch_dsl.Q('multi_match', query=search_input, fields=['title', 'body'])
+        q = elasticsearch_dsl.Q('multi_match', query=search_input, fields=['name', 'summary', 'environment'])
         ans = res.query(q)
         answer = ans.execute()
         print(answer)
         return answer
-        
-        
 
     def clear_index(self, index_name='occam_index'):
         self.es.indices.delete(index=index_name)
