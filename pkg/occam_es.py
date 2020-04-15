@@ -49,6 +49,7 @@ class Occam_es:
         ans = res.query(q)
         answer = ans.execute()
         print(answer)
+        return answer
         
         
 
