@@ -1,11 +1,13 @@
 from elasticsearch import Elasticsearch
 from elasticsearch import helpers
+import elasticsearch_dsl
 import json
 
 
 class Occam_es:
     def __init__(self, host='http://localhost', port=9200):
         self.es = Elasticsearch(HOST=host, PORT=port)
+        print(type(self.es))
         
     #  very basic attampt at providing elastic search functionality for Occam
 
@@ -26,7 +28,7 @@ class Occam_es:
                     # '_type': 'occam_obj',
                     '_id': i,
                     'title': line,
-                    '_source': data[line],
+                    'body': data[line],
                 }
                 actions.append(entry)
                 # es.index(index="games", doc_type="game_info", id=index_val, body=data[line])
@@ -40,8 +42,16 @@ class Occam_es:
 
     def occam_search(self, search_input, index_name='occam_index'):
         # not done just matches orgional test functionality (probably)
-        res = self.es.search(index=index_name, body={"from":0,"size":10,"query":{"match":{"description":search_input}}})
-        return res
+        # res = self.es.search(index=index_name, body={"from":0,"size":10,"query":{"match":{"description":search_input}}})
+        res = elasticsearch_dsl.Search(using=self.es, index=index_name)
+        print(res.count())
+        q = elasticsearch_dsl.Q('multi_match', query=search_input, fields=['title', 'body'])
+        ans = res.query(q)
+        answer = ans.execute()
+        print(answer)
+        
+        # answer = res.execute()
+        
 
     def clear_index(self, index_name='occam_index'):
         self.es.indices.delete(index=index_name)
