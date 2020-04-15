@@ -28,7 +28,7 @@ class Occam_es:
                     # '_type': 'occam_obj',
                     '_id': i,
                     'title': line,
-                    'body': data[line],
+                    'body': data[line].get('description'),
                 }
                 actions.append(entry)
                 # es.index(index="games", doc_type="game_info", id=index_val, body=data[line])
@@ -50,7 +50,6 @@ class Occam_es:
         answer = ans.execute()
         print(answer)
         
-        # answer = res.execute()
         
 
     def clear_index(self, index_name='occam_index'):
