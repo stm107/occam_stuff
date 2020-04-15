@@ -7,7 +7,7 @@ import json
 class Occam_es:
     def __init__(self, host='http://localhost', port=9200):
         self.es = Elasticsearch(HOST=host, PORT=port)
-        print(type(self.es))
+        # print(type(self.es))
         
     #  very basic attampt at providing elastic search functionality for Occam
 
@@ -38,6 +38,7 @@ class Occam_es:
 
     def add_new_obj(self, new_obj, index_name='occam_index'):
         # adds a single new object
+        ##### update for occam objs
         self.es.index(index=index_name, body=new_obj)
        
 
@@ -45,11 +46,11 @@ class Occam_es:
         # not done just matches orgional test functionality (probably)
         # res = self.es.search(index=index_name, body={"from":0,"size":10,"query":{"match":{"description":search_input}}})
         res = elasticsearch_dsl.Search(using=self.es, index=index_name)
-        print(res.count())
+        print('<for debug/dev> number of objects in index ' + str(res.count()))
         q = elasticsearch_dsl.Q('multi_match', query=search_input, fields=['name', 'summary', 'environment'])
         ans = res.query(q)
         answer = ans.execute()
-        print(answer)
+        # print(answer)
         return answer
 
     def clear_index(self, index_name='occam_index'):
