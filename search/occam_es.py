@@ -65,24 +65,45 @@ class Occam_es:
     def add_new_obj(self, new_obj, index_name='occam_index'):
         # adds a single new object
         ##### update for occam objs
+        data = new_obj
+        new_objs = []
+        for line in new_obj
+            clean_obj = {
+                    '_index': 'occam_index',
+                    # '_type': 'occam_obj',
+                    'href': line,
+                    'name': data[line].get('name'),
+                    'type': data[line].get('type'),
+                    'architecture': data[line].get('architecture'), 
+                    'environment': data[line].get('enviorment'),
+                    'summary': data[line].get('summary'),
+                    'return_obj': {
+                        'uid': data[line].get('uid'),
+                        'id': data[line].get('id'),
+                        'revision': data[line].get('revision'),
+                        'name': data[line].get('name'),
+                        'owner': data[line].get('owner'),
+                        'summary': data[line].get('summary'),
+                        'type': data[line].get('type'),
+                        'subtype': data[line].get('subtype'),
+                        'architecture': data[line].get('architecture'),
+                        'environment': data[line].get('enviorment'),
+                        'images': data[line].get('images')
+                    }
+            }
+            new_objs.append(clean_obj)
         self.es.index(index=index_name, body=new_obj)
-       
 
     def occam_search(self, search_input, index_name='occam_index'):
         # not done just matches orgional test functionality (probably)
         # res = self.es.search(index=index_name, body={"from":0,"size":10,"query":{"match":{"description":search_input}}})
         res = elasticsearch_dsl.Search(using=self.es, index=index_name)
         # print('<for debug/dev> number of objects in index ' + str(res.count()))
-    
         q = elasticsearch_dsl.Q('multi_match', query=search_input, fields=['name', 'summary', 'environment'])
         ans = res.query(q)
         answer = ans.execute()
-        for line in answer:
-            print(line.name + ' -- ' +line.summary)
-            # print('     '+str(line.return_obj))
         # returns an array of dicts that conatin the data occam requres from search
         return help_return(answer)
-        #return answer
 
     def clear_index(self, index_name='occam_index'):
         self.es.indices.delete(index=index_name)
