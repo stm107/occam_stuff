@@ -1,0 +1,3221 @@
+{
+ "/QmXQ51Xturuh9gDBMaKGjx5rmXPKZXgBydNtWcktzYrD23/5dqnVBSzd6gUQ2AZ4h8ubQ56thNR4X": {
+  "name": "sed",
+  "type": "application",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "summary": "Commonly used to filter text, i.e., it takes text input, performs some operation (or set of operations) on it, and outputs the modified text.",
+  "build": {
+   "install": [
+    {
+     "type": "resource",
+     "subtype": "application/x-xz",
+     "source": "https://ftp.gnu.org/gnu/sed/sed-4.4.tar.xz",
+     "name": "GNU Sed 4.4 Source Code",
+     "to": "sed-4.4.tar.xz",
+     "actions": {
+      "unpack": "."
+     },
+     "id": "QmVLf36uuTqaG5nowdKWmCBbffE2uYQXLtzf1UKUoMyZv1",
+     "uid": "QmYwRf8wx5ZiiCVRyvJTHqrB718wH1UKVzNYJSEqcZMqgw",
+     "revision": "Qmc4MYpQcDx5hwaWSPvGhFotZHn87isMajj3Jtx3pBQ3V4"
+    }
+   ],
+   "dependencies": [
+    {
+     "type": "compiler",
+     "name": "g++",
+     "id": "QmVseooVZ4dn2Vo4ikwKXzmBcqDH9avt4YWYtKmujP4KC8",
+     "version": ">=4"
+    },
+    {
+     "name": "build",
+     "type": "collection",
+     "id": "QmQ1i5VjdxdU7dWCkhpM7ccVDCBNPX2swTLQSHRiCW8sK1",
+     "version": "1.0"
+    }
+   ],
+   "command": [
+    "/bin/bash",
+    "build.sh"
+   ]
+  },
+  "run": {
+   "command": "usr/bin/sed"
+  },
+  "init": {
+   "link": [
+    {
+     "source": "usr/bin",
+     "to": "/usr/bin"
+    }
+   ]
+  }
+ },
+ "/QmdbeqUfAskyMYQW1xhiFRT2YWWCGhKGxhBdXb4e2mvdwC/5dqtHMvADcZ9JAcgALZjwjJFRtzAsb": {
+  "name": "addr2line",
+  "type": "application",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "summary": "A collection of tools used to manipulate or analyze binary, particularly executable, files.",
+  "license": "GPLv2",
+  "init": {
+   "link": [
+    {
+     "source": "usr/bin",
+     "to": "/usr/bin"
+    },
+    {
+     "source": "usr/lib",
+     "to": "/usr/lib"
+    },
+    {
+     "source": "usr/include",
+     "to": "/usr/include"
+    }
+   ]
+  },
+  "run": {
+   "command": "usr/bin/addr2line"
+  },
+  "id": "QmdbeqUfAskyMYQW1xhiFRT2YWWCGhKGxhBdXb4e2mvdwC",
+  "uid": "QmXhD2ukFyVcdViybZuYqxdPJet8wD1Dr2iVf3dVnFZnnU",
+  "owner": {
+   "id": "QmeskESqRGhHLRzHd6MBifycrsFkzTAcUYAcqBBUr8vuZN",
+   "uid": "QmVCsUgZ1Bzx8xffBiz259TRm18EGcJzYwLfr3jhWpSArH"
+  }
+ },
+ "/Qmd24EunATianvD58LTEksY1GdPSdp78tuSHPiHkSqD88u/5dqtHMvADcZ9JAcgALZjwjJFRtzAsb": {
+  "name": "ar",
+  "type": "application",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "summary": "A collection of tools used to manipulate or analyze binary, particularly executable, files.",
+  "license": "GPLv2",
+  "init": {
+   "link": [
+    {
+     "source": "usr/bin",
+     "to": "/usr/bin"
+    },
+    {
+     "source": "usr/lib",
+     "to": "/usr/lib"
+    },
+    {
+     "source": "usr/include",
+     "to": "/usr/include"
+    }
+   ]
+  },
+  "run": {
+   "command": "usr/bin/ar"
+  },
+  "id": "Qmd24EunATianvD58LTEksY1GdPSdp78tuSHPiHkSqD88u",
+  "uid": "QmaWBg3jfi8kBn1P4VFK2xL1FfvRewU58FFXv8uqntc3Xm",
+  "owner": {
+   "id": "QmeskESqRGhHLRzHd6MBifycrsFkzTAcUYAcqBBUr8vuZN",
+   "uid": "QmVCsUgZ1Bzx8xffBiz259TRm18EGcJzYwLfr3jhWpSArH"
+  }
+ },
+ "/QmNpM3pfS6tmbXoUzZSp658MwvAABff5F2jcJgrDrqQvf2/5dqtHMvADcZ9JAcgALZjwjJFRtzAsb": {
+  "name": "c++filt",
+  "type": "application",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "summary": "A collection of tools used to manipulate or analyze binary, particularly executable, files.",
+  "license": "GPLv2",
+  "init": {
+   "link": [
+    {
+     "source": "usr/bin",
+     "to": "/usr/bin"
+    },
+    {
+     "source": "usr/lib",
+     "to": "/usr/lib"
+    },
+    {
+     "source": "usr/include",
+     "to": "/usr/include"
+    }
+   ]
+  },
+  "run": {
+   "command": "usr/bin/c++filt"
+  },
+  "id": "QmNpM3pfS6tmbXoUzZSp658MwvAABff5F2jcJgrDrqQvf2",
+  "uid": "QmXAKNmgqJRR6Nz3xh4MNMAin3MfiAcNTx35NdYMEY5DWM",
+  "owner": {
+   "id": "QmeskESqRGhHLRzHd6MBifycrsFkzTAcUYAcqBBUr8vuZN",
+   "uid": "QmVCsUgZ1Bzx8xffBiz259TRm18EGcJzYwLfr3jhWpSArH"
+  }
+ },
+ "/QmV8yJWj8CuRQ1HnaQfoqbrw4A5o9YaJkfyJ41fnFA8M5W/5dqtHMvADcZ9JAcgALZjwjJFRtzAsb": {
+  "name": "ld.bfd",
+  "type": "application",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "summary": "A collection of tools used to manipulate or analyze binary, particularly executable, files.",
+  "license": "GPLv2",
+  "init": {
+   "link": [
+    {
+     "source": "usr/bin",
+     "to": "/usr/bin"
+    },
+    {
+     "source": "usr/lib",
+     "to": "/usr/lib"
+    },
+    {
+     "source": "usr/include",
+     "to": "/usr/include"
+    }
+   ]
+  },
+  "run": {
+   "command": "usr/bin/ld.bfd"
+  },
+  "id": "QmV8yJWj8CuRQ1HnaQfoqbrw4A5o9YaJkfyJ41fnFA8M5W",
+  "uid": "QmSC4NfvHw4kinju3SVaSd5RQesCG5ZhZvmF4K3s6y16KP",
+  "owner": {
+   "id": "QmeskESqRGhHLRzHd6MBifycrsFkzTAcUYAcqBBUr8vuZN",
+   "uid": "QmVCsUgZ1Bzx8xffBiz259TRm18EGcJzYwLfr3jhWpSArH"
+  }
+ },
+ "/QmPiT5T3qhBVqdDQF8rjXNA8wD7vK97ivULYhY51XRm7Dv/5dqtHMvADcZ9JAcgALZjwjJFRtzAsb": {
+  "name": "as",
+  "type": "application",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "summary": "A collection of tools used to manipulate or analyze binary, particularly executable, files.",
+  "license": "GPLv2",
+  "init": {
+   "link": [
+    {
+     "source": "usr/bin",
+     "to": "/usr/bin"
+    },
+    {
+     "source": "usr/lib",
+     "to": "/usr/lib"
+    },
+    {
+     "source": "usr/include",
+     "to": "/usr/include"
+    }
+   ]
+  },
+  "run": {
+   "command": "usr/bin/as"
+  },
+  "id": "QmPiT5T3qhBVqdDQF8rjXNA8wD7vK97ivULYhY51XRm7Dv",
+  "uid": "QmW3ShStcomzzoPPBtPNBZmsRwH5EGvEg7Lf6QCKtBHwaQ",
+  "owner": {
+   "id": "QmeskESqRGhHLRzHd6MBifycrsFkzTAcUYAcqBBUr8vuZN",
+   "uid": "QmVCsUgZ1Bzx8xffBiz259TRm18EGcJzYwLfr3jhWpSArH"
+  }
+ },
+ "/QmTrNKjrEN1nfWvjFLPByt8NdtG7u9aXHALSAegk8Z7xY3/5dqtHMvADcZ9JAcgALZjwjJFRtzAsb": {
+  "name": "objdump",
+  "type": "application",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "summary": "A collection of tools used to manipulate or analyze binary, particularly executable, files.",
+  "license": "GPLv2",
+  "init": {
+   "link": [
+    {
+     "source": "usr/bin",
+     "to": "/usr/bin"
+    },
+    {
+     "source": "usr/lib",
+     "to": "/usr/lib"
+    },
+    {
+     "source": "usr/include",
+     "to": "/usr/include"
+    }
+   ]
+  },
+  "run": {
+   "command": "usr/bin/objdump"
+  },
+  "id": "QmTrNKjrEN1nfWvjFLPByt8NdtG7u9aXHALSAegk8Z7xY3",
+  "uid": "QmVrXMG2bwg4Q8XB9BxTPWbjEScAWHSX8BWy5g6PDRjGoB",
+  "owner": {
+   "id": "QmeskESqRGhHLRzHd6MBifycrsFkzTAcUYAcqBBUr8vuZN",
+   "uid": "QmVCsUgZ1Bzx8xffBiz259TRm18EGcJzYwLfr3jhWpSArH"
+  }
+ },
+ "/QmbW35DCVVQjtfY5zDZTXN21iRrjXZEJ4qAKNcwCLesak2/5dqtHMvADcZ9JAcgALZjwjJFRtzAsb": {
+  "name": "ranlib",
+  "type": "application",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "summary": "A collection of tools used to manipulate or analyze binary, particularly executable, files.",
+  "license": "GPLv2",
+  "init": {
+   "link": [
+    {
+     "source": "usr/bin",
+     "to": "/usr/bin"
+    },
+    {
+     "source": "usr/lib",
+     "to": "/usr/lib"
+    },
+    {
+     "source": "usr/include",
+     "to": "/usr/include"
+    }
+   ]
+  },
+  "run": {
+   "command": "usr/bin/ranlib"
+  },
+  "id": "QmbW35DCVVQjtfY5zDZTXN21iRrjXZEJ4qAKNcwCLesak2",
+  "uid": "QmXNVjTfKaSthkvwyBT9AQU62Vr2jbrG4EgUCBdPwxjNfo",
+  "owner": {
+   "id": "QmeskESqRGhHLRzHd6MBifycrsFkzTAcUYAcqBBUr8vuZN",
+   "uid": "QmVCsUgZ1Bzx8xffBiz259TRm18EGcJzYwLfr3jhWpSArH"
+  }
+ },
+ "/QmajiFWY1c23iGUM2ySeqFVWHqC7yT4Uud2JMhheZ51Z8p/5dqtHMvADcZ9JAcgALZjwjJFRtzAsb": {
+  "name": "readelf",
+  "type": "application",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "summary": "A collection of tools used to manipulate or analyze binary, particularly executable, files.",
+  "license": "GPLv2",
+  "init": {
+   "link": [
+    {
+     "source": "usr/bin",
+     "to": "/usr/bin"
+    },
+    {
+     "source": "usr/lib",
+     "to": "/usr/lib"
+    },
+    {
+     "source": "usr/include",
+     "to": "/usr/include"
+    }
+   ]
+  },
+  "run": {
+   "command": "usr/bin/readelf"
+  },
+  "id": "QmajiFWY1c23iGUM2ySeqFVWHqC7yT4Uud2JMhheZ51Z8p",
+  "uid": "QmTfFAXURyU8G2zUG4iU56ZtW8RxsFwp8jRHH5j5jaqkmw",
+  "owner": {
+   "id": "QmeskESqRGhHLRzHd6MBifycrsFkzTAcUYAcqBBUr8vuZN",
+   "uid": "QmVCsUgZ1Bzx8xffBiz259TRm18EGcJzYwLfr3jhWpSArH"
+  }
+ },
+ "/Qma9mwieCWNfefbDKkiC1oMeQBwkUuMKYtBVevMtcR2Tvt/5dqtHMvADcZ9JAcgALZjwjJFRtzAsb": {
+  "name": "size",
+  "type": "application",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "summary": "A collection of tools used to manipulate or analyze binary, particularly executable, files.",
+  "license": "GPLv2",
+  "init": {
+   "link": [
+    {
+     "source": "usr/bin",
+     "to": "/usr/bin"
+    },
+    {
+     "source": "usr/lib",
+     "to": "/usr/lib"
+    },
+    {
+     "source": "usr/include",
+     "to": "/usr/include"
+    }
+   ]
+  },
+  "run": {
+   "command": "usr/bin/size"
+  },
+  "id": "Qma9mwieCWNfefbDKkiC1oMeQBwkUuMKYtBVevMtcR2Tvt",
+  "uid": "QmZmxLJqbBKmgc3PVxtRx88thXLq8TYfirWxtm9WJa5cyC",
+  "owner": {
+   "id": "QmeskESqRGhHLRzHd6MBifycrsFkzTAcUYAcqBBUr8vuZN",
+   "uid": "QmVCsUgZ1Bzx8xffBiz259TRm18EGcJzYwLfr3jhWpSArH"
+  }
+ },
+ "/QmZ74Pc2S9cg5y2RdWmXuvD7L7N7iMhEJWmayFRQyorrbK/5dqtHMvADcZ9JAcgALZjwjJFRtzAsb": {
+  "name": "strings",
+  "type": "application",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "summary": "A collection of tools used to manipulate or analyze binary, particularly executable, files.",
+  "license": "GPLv2",
+  "init": {
+   "link": [
+    {
+     "source": "usr/bin",
+     "to": "/usr/bin"
+    },
+    {
+     "source": "usr/lib",
+     "to": "/usr/lib"
+    },
+    {
+     "source": "usr/include",
+     "to": "/usr/include"
+    }
+   ]
+  },
+  "run": {
+   "command": "usr/bin/strings"
+  },
+  "id": "QmZ74Pc2S9cg5y2RdWmXuvD7L7N7iMhEJWmayFRQyorrbK",
+  "uid": "QmbYVbTBFFxdRk32x8kRzb5WMd8r3Kx2342YJCBVLzEH6y",
+  "owner": {
+   "id": "QmeskESqRGhHLRzHd6MBifycrsFkzTAcUYAcqBBUr8vuZN",
+   "uid": "QmVCsUgZ1Bzx8xffBiz259TRm18EGcJzYwLfr3jhWpSArH"
+  }
+ },
+ "/QmbmFs2DXpL9MthkghEoBpeYXnp3X8QvmyktpchqvXjjcn/5dqtHMvADcZ9JAcgALZjwjJFRtzAsb": {
+  "name": "strip",
+  "type": "application",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "summary": "A collection of tools used to manipulate or analyze binary, particularly executable, files.",
+  "license": "GPLv2",
+  "init": {
+   "link": [
+    {
+     "source": "usr/bin",
+     "to": "/usr/bin"
+    },
+    {
+     "source": "usr/lib",
+     "to": "/usr/lib"
+    },
+    {
+     "source": "usr/include",
+     "to": "/usr/include"
+    }
+   ]
+  },
+  "run": {
+   "command": "usr/bin/strip"
+  },
+  "id": "QmbmFs2DXpL9MthkghEoBpeYXnp3X8QvmyktpchqvXjjcn",
+  "uid": "QmeqFLPh7jHHsaYP9mThrtJYFGzCDp45x6dqxe4mmpzVLb",
+  "owner": {
+   "id": "QmeskESqRGhHLRzHd6MBifycrsFkzTAcUYAcqBBUr8vuZN",
+   "uid": "QmVCsUgZ1Bzx8xffBiz259TRm18EGcJzYwLfr3jhWpSArH"
+  }
+ },
+ "/QmeskESqRGhHLRzHd6MBifycrsFkzTAcUYAcqBBUr8vuZN/5dqtHMvADcZ9JAcgALZjwjJFRtzAsb": {
+  "name": "binutils",
+  "type": "collection",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "summary": "A collection of tools used to manipulate or analyze binary, particularly executable, files.",
+  "license": "GPLv2",
+  "build": {
+   "install": [
+    {
+     "type": "resource",
+     "subtype": "application/x-xz",
+     "source": "ftp://ftp.gnu.org/gnu/binutils/binutils-2.28.tar.gz",
+     "name": "GNU Binutils 2.28 Source Code",
+     "to": "binutils-2.28.tar.xz",
+     "actions": {
+      "unpack": "."
+     },
+     "id": "QmTeW8ovQHnMASTpfhfWX31qHrWGAzxqomsSB1vUXjgoFb",
+     "uid": "QmU3AxDD54i2sX59iay18BaXM3Jg5fFB6k6VKPhuuwxWiJ",
+     "revision": "QmcAceMEGwS1qjJgw8GYDqej3oZ92dcJCETDn3U6BNjR3U"
+    }
+   ],
+   "command": [
+    "/bin/bash",
+    "build.sh"
+   ],
+   "dependencies": [
+    {
+     "type": "collection",
+     "id": "Qmcf46iMQrsAX8Ke3TYXMzZwotRasc6ihk3S3zaZfMnjxP",
+     "version": "3.5-bootstrap.s2",
+     "name": "diffutils"
+    },
+    {
+     "type": "application",
+     "name": "file",
+     "id": "QmPbSYxhVXdEzVagcqsoi2XpLgK6TFNJAydLjPjbVZ8MJh",
+     "version": "5.31-bootstrap.s2"
+    },
+    {
+     "type": "library",
+     "name": "zlib",
+     "id": "QmYX9GEqMaEFmT3arBuR6cxG1nbizF8aYb5uDPAR4hMqwb",
+     "version": "1.2.11-bootstrap.s2"
+    },
+    {
+     "type": "collection",
+     "name": "build",
+     "id": "QmQ1i5VjdxdU7dWCkhpM7ccVDCBNPX2swTLQSHRiCW8sK1",
+     "version": "0.bootstrap"
+    },
+    {
+     "type": "compiler",
+     "name": "g++",
+     "id": "QmVseooVZ4dn2Vo4ikwKXzmBcqDH9avt4YWYtKmujP4KC8",
+     "version": "4.7.4-bootstrap"
+    }
+   ]
+  },
+  "init": {
+   "link": [
+    {
+     "source": "usr/bin",
+     "to": "/usr/bin"
+    },
+    {
+     "source": "usr/lib",
+     "to": "/usr/lib"
+    },
+    {
+     "source": "usr/include",
+     "to": "/usr/include"
+    }
+   ]
+  },
+  "includes": [
+   {
+    "type": "application",
+    "name": "addr2line",
+    "run": {
+     "command": "usr/bin/addr2line"
+    },
+    "id": "QmdbeqUfAskyMYQW1xhiFRT2YWWCGhKGxhBdXb4e2mvdwC",
+    "uid": "QmXhD2ukFyVcdViybZuYqxdPJet8wD1Dr2iVf3dVnFZnnU"
+   },
+   {
+    "type": "application",
+    "name": "ar",
+    "run": {
+     "command": "usr/bin/ar"
+    },
+    "id": "Qmd24EunATianvD58LTEksY1GdPSdp78tuSHPiHkSqD88u",
+    "uid": "QmaWBg3jfi8kBn1P4VFK2xL1FfvRewU58FFXv8uqntc3Xm"
+   },
+   {
+    "type": "application",
+    "name": "as",
+    "run": {
+     "command": "usr/bin/as"
+    },
+    "id": "QmPiT5T3qhBVqdDQF8rjXNA8wD7vK97ivULYhY51XRm7Dv",
+    "uid": "QmW3ShStcomzzoPPBtPNBZmsRwH5EGvEg7Lf6QCKtBHwaQ"
+   },
+   {
+    "type": "application",
+    "name": "c++filt",
+    "run": {
+     "command": "usr/bin/c++filt"
+    },
+    "id": "QmNpM3pfS6tmbXoUzZSp658MwvAABff5F2jcJgrDrqQvf2",
+    "uid": "QmXAKNmgqJRR6Nz3xh4MNMAin3MfiAcNTx35NdYMEY5DWM"
+   },
+   {
+    "type": "application",
+    "name": "elfedit",
+    "run": {
+     "command": "usr/bin/elfedit"
+    },
+    "id": "QmVaVphxA2jvcsHJtytJrF5ZFWesbTkD1hqfHJukWEcGnU",
+    "uid": "QmdpQAzFLUvj9AdHjwPjRD2zGkuzBNiFpgG2FSpRv7Engr"
+   },
+   {
+    "type": "application",
+    "name": "gprof",
+    "run": {
+     "command": "usr/bin/gprof"
+    },
+    "id": "QmPJDzkkqQX4JMWUorRyR8kiz6aZfcipRLuJEVWcf94QNP",
+    "uid": "Qmbt4b4WbzJKrGCF2WqQ2EpPEEsKo1p8aVDrNWNdCUz7GL"
+   },
+   {
+    "type": "application",
+    "name": "ld",
+    "run": {
+     "command": "usr/bin/ld"
+    },
+    "id": "QmbnkDUxXbW8dKzm6d2mosqdBNSE9ih1YHYEn2ninj1tFU",
+    "uid": "QmUJFSNpLKKqUiongeWteMcg52iKhqfVG1qrw2XVWW2haL"
+   },
+   {
+    "type": "application",
+    "name": "ld.bfd",
+    "run": {
+     "command": "usr/bin/ld.bfd"
+    },
+    "id": "QmV8yJWj8CuRQ1HnaQfoqbrw4A5o9YaJkfyJ41fnFA8M5W",
+    "uid": "QmSC4NfvHw4kinju3SVaSd5RQesCG5ZhZvmF4K3s6y16KP"
+   },
+   {
+    "type": "application",
+    "name": "nm",
+    "run": {
+     "command": "usr/bin/nm"
+    },
+    "id": "QmSWKwPZFbUwou8mNwnXmeLB6ASZqndQPpWn1oiWteXo66",
+    "uid": "QmfNB8G2396bE1T69EAzLme5HTMpxUsZZHkcndSXTbszZm"
+   },
+   {
+    "type": "application",
+    "name": "objcopy",
+    "run": {
+     "command": "usr/bin/objcopy"
+    },
+    "id": "QmQqnVXgoXaxfPuTBCAsdCEH2wt755tJ7dvR2h6YXB4HAy",
+    "uid": "QmVBGDgAejY2KA1moPP7wR3DAH9MPLEtrc1QZtDTCn5nmj"
+   },
+   {
+    "type": "application",
+    "name": "objdump",
+    "run": {
+     "command": "usr/bin/objdump"
+    },
+    "id": "QmTrNKjrEN1nfWvjFLPByt8NdtG7u9aXHALSAegk8Z7xY3",
+    "uid": "QmVrXMG2bwg4Q8XB9BxTPWbjEScAWHSX8BWy5g6PDRjGoB"
+   },
+   {
+    "type": "application",
+    "name": "ranlib",
+    "run": {
+     "command": "usr/bin/ranlib"
+    },
+    "id": "QmbW35DCVVQjtfY5zDZTXN21iRrjXZEJ4qAKNcwCLesak2",
+    "uid": "QmXNVjTfKaSthkvwyBT9AQU62Vr2jbrG4EgUCBdPwxjNfo"
+   },
+   {
+    "type": "application",
+    "name": "readelf",
+    "run": {
+     "command": "usr/bin/readelf"
+    },
+    "id": "QmajiFWY1c23iGUM2ySeqFVWHqC7yT4Uud2JMhheZ51Z8p",
+    "uid": "QmTfFAXURyU8G2zUG4iU56ZtW8RxsFwp8jRHH5j5jaqkmw"
+   },
+   {
+    "type": "application",
+    "name": "size",
+    "run": {
+     "command": "usr/bin/size"
+    },
+    "id": "Qma9mwieCWNfefbDKkiC1oMeQBwkUuMKYtBVevMtcR2Tvt",
+    "uid": "QmZmxLJqbBKmgc3PVxtRx88thXLq8TYfirWxtm9WJa5cyC"
+   },
+   {
+    "type": "application",
+    "name": "strings",
+    "run": {
+     "command": "usr/bin/strings"
+    },
+    "id": "QmZ74Pc2S9cg5y2RdWmXuvD7L7N7iMhEJWmayFRQyorrbK",
+    "uid": "QmbYVbTBFFxdRk32x8kRzb5WMd8r3Kx2342YJCBVLzEH6y"
+   },
+   {
+    "type": "application",
+    "name": "strip",
+    "run": {
+     "command": "usr/bin/strip"
+    },
+    "id": "QmbmFs2DXpL9MthkghEoBpeYXnp3X8QvmyktpchqvXjjcn",
+    "uid": "QmeqFLPh7jHHsaYP9mThrtJYFGzCDp45x6dqxe4mmpzVLb"
+   }
+  ]
+ },
+ "/QmVaVphxA2jvcsHJtytJrF5ZFWesbTkD1hqfHJukWEcGnU/5dqtHMvADcZ9JAcgALZjwjJFRtzAsb": {
+  "name": "elfedit",
+  "type": "application",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "summary": "A collection of tools used to manipulate or analyze binary, particularly executable, files.",
+  "license": "GPLv2",
+  "init": {
+   "link": [
+    {
+     "source": "usr/bin",
+     "to": "/usr/bin"
+    },
+    {
+     "source": "usr/lib",
+     "to": "/usr/lib"
+    },
+    {
+     "source": "usr/include",
+     "to": "/usr/include"
+    }
+   ]
+  },
+  "run": {
+   "command": "usr/bin/elfedit"
+  },
+  "id": "QmVaVphxA2jvcsHJtytJrF5ZFWesbTkD1hqfHJukWEcGnU",
+  "uid": "QmdpQAzFLUvj9AdHjwPjRD2zGkuzBNiFpgG2FSpRv7Engr",
+  "owner": {
+   "id": "QmeskESqRGhHLRzHd6MBifycrsFkzTAcUYAcqBBUr8vuZN",
+   "uid": "QmVCsUgZ1Bzx8xffBiz259TRm18EGcJzYwLfr3jhWpSArH"
+  }
+ },
+ "/QmPJDzkkqQX4JMWUorRyR8kiz6aZfcipRLuJEVWcf94QNP/5dqtHMvADcZ9JAcgALZjwjJFRtzAsb": {
+  "name": "gprof",
+  "type": "application",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "summary": "A collection of tools used to manipulate or analyze binary, particularly executable, files.",
+  "license": "GPLv2",
+  "init": {
+   "link": [
+    {
+     "source": "usr/bin",
+     "to": "/usr/bin"
+    },
+    {
+     "source": "usr/lib",
+     "to": "/usr/lib"
+    },
+    {
+     "source": "usr/include",
+     "to": "/usr/include"
+    }
+   ]
+  },
+  "run": {
+   "command": "usr/bin/gprof"
+  },
+  "id": "QmPJDzkkqQX4JMWUorRyR8kiz6aZfcipRLuJEVWcf94QNP",
+  "uid": "Qmbt4b4WbzJKrGCF2WqQ2EpPEEsKo1p8aVDrNWNdCUz7GL",
+  "owner": {
+   "id": "QmeskESqRGhHLRzHd6MBifycrsFkzTAcUYAcqBBUr8vuZN",
+   "uid": "QmVCsUgZ1Bzx8xffBiz259TRm18EGcJzYwLfr3jhWpSArH"
+  }
+ },
+ "/QmbnkDUxXbW8dKzm6d2mosqdBNSE9ih1YHYEn2ninj1tFU/5dqtHMvADcZ9JAcgALZjwjJFRtzAsb": {
+  "name": "ld",
+  "type": "application",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "summary": "A collection of tools used to manipulate or analyze binary, particularly executable, files.",
+  "license": "GPLv2",
+  "init": {
+   "link": [
+    {
+     "source": "usr/bin",
+     "to": "/usr/bin"
+    },
+    {
+     "source": "usr/lib",
+     "to": "/usr/lib"
+    },
+    {
+     "source": "usr/include",
+     "to": "/usr/include"
+    }
+   ]
+  },
+  "run": {
+   "command": "usr/bin/ld"
+  },
+  "id": "QmbnkDUxXbW8dKzm6d2mosqdBNSE9ih1YHYEn2ninj1tFU",
+  "uid": "QmUJFSNpLKKqUiongeWteMcg52iKhqfVG1qrw2XVWW2haL",
+  "owner": {
+   "id": "QmeskESqRGhHLRzHd6MBifycrsFkzTAcUYAcqBBUr8vuZN",
+   "uid": "QmVCsUgZ1Bzx8xffBiz259TRm18EGcJzYwLfr3jhWpSArH"
+  }
+ },
+ "/QmSWKwPZFbUwou8mNwnXmeLB6ASZqndQPpWn1oiWteXo66/5dqtHMvADcZ9JAcgALZjwjJFRtzAsb": {
+  "name": "nm",
+  "type": "application",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "summary": "A collection of tools used to manipulate or analyze binary, particularly executable, files.",
+  "license": "GPLv2",
+  "init": {
+   "link": [
+    {
+     "source": "usr/bin",
+     "to": "/usr/bin"
+    },
+    {
+     "source": "usr/lib",
+     "to": "/usr/lib"
+    },
+    {
+     "source": "usr/include",
+     "to": "/usr/include"
+    }
+   ]
+  },
+  "run": {
+   "command": "usr/bin/nm"
+  },
+  "id": "QmSWKwPZFbUwou8mNwnXmeLB6ASZqndQPpWn1oiWteXo66",
+  "uid": "QmfNB8G2396bE1T69EAzLme5HTMpxUsZZHkcndSXTbszZm",
+  "owner": {
+   "id": "QmeskESqRGhHLRzHd6MBifycrsFkzTAcUYAcqBBUr8vuZN",
+   "uid": "QmVCsUgZ1Bzx8xffBiz259TRm18EGcJzYwLfr3jhWpSArH"
+  }
+ },
+ "/QmQqnVXgoXaxfPuTBCAsdCEH2wt755tJ7dvR2h6YXB4HAy/5dqtHMvADcZ9JAcgALZjwjJFRtzAsb": {
+  "name": "objcopy",
+  "type": "application",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "summary": "A collection of tools used to manipulate or analyze binary, particularly executable, files.",
+  "license": "GPLv2",
+  "init": {
+   "link": [
+    {
+     "source": "usr/bin",
+     "to": "/usr/bin"
+    },
+    {
+     "source": "usr/lib",
+     "to": "/usr/lib"
+    },
+    {
+     "source": "usr/include",
+     "to": "/usr/include"
+    }
+   ]
+  },
+  "run": {
+   "command": "usr/bin/objcopy"
+  },
+  "id": "QmQqnVXgoXaxfPuTBCAsdCEH2wt755tJ7dvR2h6YXB4HAy",
+  "uid": "QmVBGDgAejY2KA1moPP7wR3DAH9MPLEtrc1QZtDTCn5nmj",
+  "owner": {
+   "id": "QmeskESqRGhHLRzHd6MBifycrsFkzTAcUYAcqBBUr8vuZN",
+   "uid": "QmVCsUgZ1Bzx8xffBiz259TRm18EGcJzYwLfr3jhWpSArH"
+  }
+ },
+ "/QmYX9GEqMaEFmT3arBuR6cxG1nbizF8aYb5uDPAR4hMqwb/5dscjVd27brCqkt1k1qH83KbDZpcBA": {
+  "name": "zlib",
+  "type": "library",
+  "summary": "A software library used for data compression.",
+  "environment": "linux",
+  "architecture": "x86-64",
+  "init": {
+   "link": [
+    {
+     "source": "usr/lib",
+     "to": "/usr/lib"
+    },
+    {
+     "source": "usr/include",
+     "to": "/usr/include"
+    }
+   ]
+  },
+  "build": {
+   "install": [
+    {
+     "type": "resource",
+     "subtype": "application/gzip",
+     "source": "https://www.zlib.net/zlib-1.2.11.tar.gz",
+     "to": "zlib-1.2.11.tar.gz",
+     "name": "zlib 1.2.11 Source Code",
+     "actions": {
+      "unpack": "."
+     },
+     "id": "QmULK45XfURrQnwyRfzo9j37w94cuiWuMDLxssbfUFi72N",
+     "uid": "QmTr6ZeiBC1oWWNUdAs5pRFHBFFoszTbE8LDM7D3dK6Fan",
+     "revision": "QmbXMYiqCoJvvo7FBy516116NKSecitoeN1KFiBybbeL4Y"
+    }
+   ],
+   "command": [
+    "/bin/bash",
+    "build.sh"
+   ],
+   "dependencies": [
+    {
+     "type": "collection",
+     "id": "Qmcf46iMQrsAX8Ke3TYXMzZwotRasc6ihk3S3zaZfMnjxP",
+     "version": "3.5-bootstrap.s2",
+     "name": "diffutils"
+    },
+    {
+     "type": "collection",
+     "name": "build",
+     "id": "QmQ1i5VjdxdU7dWCkhpM7ccVDCBNPX2swTLQSHRiCW8sK1",
+     "version": "0.bootstrap"
+    },
+    {
+     "type": "compiler",
+     "name": "g++",
+     "id": "QmVseooVZ4dn2Vo4ikwKXzmBcqDH9avt4YWYtKmujP4KC8",
+     "version": "4.7.4-bootstrap"
+    }
+   ]
+  }
+ },
+ "/QmfHo8MBtFG3WtHifMWqga2L6AveXSg5tiKayteKkfLo8z/5dqpCgcTsFhJPefRgro7VovNQracd6": {
+  "name": "openssl",
+  "type": "application",
+  "summary": "A software library for applications that secure communications over computer networks against eavesdropping or need to identify the party at the other end.",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "build": {
+   "install": [
+    {
+     "type": "resource",
+     "subtype": "application/gzip",
+     "source": "https://www.openssl.org/source/openssl-1.1.0f.tar.gz",
+     "to": "openssl-1.1.0f.tar.gz",
+     "name": "OpenSSL 1.1.0f Source Code",
+     "actions": {
+      "unpack": "."
+     },
+     "id": "QmSKodbGjnNwQchW79xvJKjp3JtGzdCGyrhb57h3v3jXwX",
+     "uid": "QmaDnKybv6UYo4ywBHDS1DgQsU9m4Ea2EDGCUdry9EwVT7",
+     "revision": "QmPcgjwtZMdvBCGtkQFpsZzjHjY7CK3boDqSxjwadNMHJU"
+    }
+   ],
+   "dependencies": [
+    {
+     "type": "collection",
+     "name": "build",
+     "id": "QmQ1i5VjdxdU7dWCkhpM7ccVDCBNPX2swTLQSHRiCW8sK1",
+     "version": "1.0"
+    },
+    {
+     "type": "compiler",
+     "name": "g++",
+     "id": "QmVseooVZ4dn2Vo4ikwKXzmBcqDH9avt4YWYtKmujP4KC8",
+     "version": ">5"
+    }
+   ],
+   "command": [
+    "/bin/bash",
+    "build.sh"
+   ]
+  },
+  "init": {
+   "link": [
+    {
+     "source": "usr/lib64",
+     "to": "/usr/lib64"
+    },
+    {
+     "source": "usr/bin",
+     "to": "/usr/bin"
+    },
+    {
+     "source": "usr/share",
+     "to": "/usr/share"
+    },
+    {
+     "source": "usr/include",
+     "to": "/usr/include"
+    },
+    {
+     "source": "etc",
+     "to": "/etc"
+    }
+   ]
+  }
+ },
+ "/QmNnx7FNs95VxhHsFYu1bttXxpUUPHYR5iZ7qocccKsgLG/5dr6QE2gK69XoQFfdEhbUaDW9uECWz": {
+  "name": "attr",
+  "type": "library",
+  "website": "http://savannah.nongnu.org/projects/attr",
+  "summary": "Commands for Manipulating Filesystem Extended Attributes.",
+  "license": "LGPL 2.1",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "build": {
+   "install": [
+    {
+     "type": "resource",
+     "subtype": "application/gzip",
+     "source": "http://download.savannah.nongnu.org/releases/attr/attr-2.4.47.src.tar.gz",
+     "to": "attr-2.4.47.src.tar.gz",
+     "name": "attr 2.4.47 Source Code",
+     "actions": {
+      "unpack": "."
+     },
+     "id": "Qmf3nnyKCaWR2oeLr4bom2uHZZfoHjoBbBkvMhpvqk3c3P",
+     "uid": "QmPf76We6p9fJPpL6VHT1uhQGTSuenx49vRud6nHTLAU6G",
+     "revision": "QmQruCgmwfS1o3UxCy6NDgM6oHytNVhBe7wsr3TTDAKQD6"
+    }
+   ],
+   "dependencies": [
+    {
+     "type": "collection",
+     "name": "build",
+     "id": "QmQ1i5VjdxdU7dWCkhpM7ccVDCBNPX2swTLQSHRiCW8sK1",
+     "version": "1.0"
+    },
+    {
+     "type": "compiler",
+     "name": "g++",
+     "id": "QmVseooVZ4dn2Vo4ikwKXzmBcqDH9avt4YWYtKmujP4KC8",
+     "version": ">5"
+    },
+    {
+     "name": "gettext",
+     "type": "collection",
+     "id": "QmQGjhRYdiZUNTprxVbuJjub1zP3jN2SfKNE837bK8qcZK",
+     "version": ">=0.19"
+    }
+   ],
+   "command": [
+    "/bin/bash",
+    "build.sh"
+   ]
+  },
+  "init": {
+   "link": [
+    {
+     "source": "usr/lib",
+     "to": "/usr/lib"
+    },
+    {
+     "source": "usr/include",
+     "to": "/usr/include"
+    },
+    {
+     "source": "usr/share",
+     "to": "/usr/share"
+    },
+    {
+     "source": "usr/bin",
+     "to": "/usr/bin"
+    }
+   ]
+  }
+ },
+ "/QmTtLkR8ych5Km6g7SJ3cCe7iVhMVMeU7Lb4yPoCU7N66R/5dtck4RSXCuPmG8rbMar2vPWxuCfKT": {
+  "name": "bc",
+  "type": "application",
+  "summary": "An arbitrary precision numeric processing language.",
+  "description": "bc is an arbitrary precision numeric processing language. Syntax is similar to C, but differs in many substantial areas. It supports interactive execution of statements. bc is a utility included in the POSIX P1003.2/D11 draft standard.\n\nSince the POSIX document does not specify how bc must be implemented, this version does not use the historical method of having bc be a compiler for the dc calculator. This version has a single executable that both compiles the language and runs the resulting `byte code'. The byte code is not the dc language.",
+  "license": "GPL 3.0",
+  "website": "http://www.gnu.org/software/ed/ed.html",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "dependencies": [
+   {
+    "id": "QmTWNjMpMr1fFKZJqzgzixe46KdKQFQRqfTUqQkNYeEpmL",
+    "name": "readline",
+    "type": "library",
+    "version": "7.x"
+   },
+   {
+    "id": "QmYHtVoAi85oX7x1apYk8WXQPq6Qwi6y1A8HbHBnY5YwGA",
+    "name": "flex",
+    "type": "application",
+    "version": "2.x"
+   }
+  ],
+  "build": {
+   "install": [
+    {
+     "type": "resource",
+     "source": "http://ftp.gnu.org/gnu/bc/bc-1.07.1.tar.gz",
+     "to": "bc-1.07.1.tar.gz",
+     "subtype": "application/gzip",
+     "name": "GNU bc 1.07.1 Source Code",
+     "actions": {
+      "unpack": "."
+     },
+     "id": "QmdLyQfPjcoZpAU3PyDVyUpVTKd3hEvwCp281FndM7dH4W",
+     "uid": "Qmbd7Se9Kh74LavKkV1FefH1Jb8M1yBMzFAzCNGYuqBMcS",
+     "revision": "QmUyrYCy7afWUepE8wBUaycSCDxxPEMhCp6sNQiwr2p7nR"
+    }
+   ],
+   "dependencies": [
+    {
+     "type": "collection",
+     "name": "build",
+     "id": "QmQ1i5VjdxdU7dWCkhpM7ccVDCBNPX2swTLQSHRiCW8sK1",
+     "version": "1.0"
+    },
+    {
+     "type": "compiler",
+     "name": "g++",
+     "id": "QmVseooVZ4dn2Vo4ikwKXzmBcqDH9avt4YWYtKmujP4KC8",
+     "version": ">5"
+    },
+    {
+     "id": "Qmdudoj3eKXYScriM4EfC8icV5HQx1emVZR3PTHaW5TgD4",
+     "name": "ed",
+     "type": "application",
+     "version": "1.x"
+    }
+   ],
+   "command": [
+    "/bin/bash",
+    "build.sh"
+   ]
+  },
+  "init": {
+   "link": [
+    {
+     "source": "usr/lib",
+     "to": "/usr/lib"
+    },
+    {
+     "source": "usr/include",
+     "to": "/usr/include"
+    },
+    {
+     "source": "usr/share",
+     "to": "/usr/share"
+    },
+    {
+     "source": "usr/bin",
+     "to": "/usr/bin"
+    }
+   ]
+  },
+  "run": {
+   "command": "usr/bin/bc",
+   "install": []
+  }
+ },
+ "/QmegMs97uVQf6vC2bDZHKcpUTWMewo6m62PqdogFYqUL1d/5dtgQ6kbHGRREKkdwJQSEKLP8ptjV3": {
+  "type": "python-library",
+  "name": "pytoml",
+  "source": "https://pypi.python.org/pypi/pytoml",
+  "environment": "linux",
+  "architecture": "x86-64",
+  "license": "MIT",
+  "description": "[![PyPI](https://img.shields.io/pypi/v/pytoml.svg)](https://pypi.python.org/pypi/pytoml)\n[![Build Status](https://travis-ci.org/avakar/pytoml.svg?branch=master)](https://travis-ci.org/avakar/pytoml)\n\n# Deprecated\n\nThe pytoml project is no longer being actively maintained. Consider using the\n[toml](https://github.com/uiri/toml) package instead.\n\n# pytoml\n\nThis project aims at being a specs-conforming and strict parser and writer for [TOML][1] files.\nThe library currently supports [version 0.4.0][2] of the specs and runs with Python 2.7+ and 3.5+.\n\nInstall:\n\n    pip install pytoml\n\nThe interface is the same as for the standard `json` package.\n\n    >>> import pytoml as toml\n    >>> toml.loads('a = 1')\n    {'a': 1}\n    >>> with open('file.toml', 'rb') as fin:\n    ...     obj = toml.load(fin)\n    >>> obj\n    {'a': 1}\n\nThe `loads` function accepts either a bytes object\n(that gets decoded as UTF-8 with no BOM allowed),\nor a unicode object.\n\nUse `dump` or `dumps` to serialize a dict into TOML.\n\n    >>> print toml.dumps(obj)\n    a = 1\n\n## tests\n\nTo run the tests update the `toml-test` submodule:\n\n    git submodule update --init --recursive\n\nThen run the tests:\n\n    python test/test.py\n\n  [1]: https://github.com/toml-lang/toml\n  [2]: https://github.com/toml-lang/toml/blob/master/versions/en/toml-v0.4.0.md\n\n\n",
+  "summary": "A parser for TOML-0.4.0",
+  "website": "https://github.com/avakar/pytoml",
+  "authors": [
+   "Martin Vejn\u00e1r"
+  ],
+  "build": {
+   "install": [
+    {
+     "type": "resource",
+     "subtype": "application/gzip",
+     "source": "https://files.pythonhosted.org/packages/f4/ba/98ee2054a2d7b8bebd367d442e089489250b6dc2aee558b000e961467212/pytoml-0.1.21.tar.gz",
+     "name": "Python Source for pytoml 0.1.21",
+     "to": "pytoml-0.1.21.tar.gz",
+     "actions": {
+      "unpack": "."
+     },
+     "id": "QmPxNdmcGaC3u8xJ6b15xhd6wnBGzgHF5KYnfM2rDCJMRE",
+     "uid": "QmWt1sjzXV6Qj1Pcqha7sKp84bAp3rk2nsnLtZoNwkQsRp",
+     "revision": "QmXxaBHrDNeLMHEKQgQd3Q6dkCQE3uTg6odFPnhYX34942"
+    }
+   ],
+   "dependencies": [
+    {
+     "id": "QmPxP6yHYWbSA3z3sFVQVp67xUmAmKAD7kLUCc7j3JJjvi",
+     "type": "library",
+     "name": "png",
+     "version": "1.x"
+    },
+    {
+     "type": "collection",
+     "name": "build",
+     "id": "QmQ1i5VjdxdU7dWCkhpM7ccVDCBNPX2swTLQSHRiCW8sK1",
+     "version": "1.0"
+    },
+    {
+     "type": "application",
+     "name": "unzip",
+     "id": "QmPvYt44E95j78i7MSi3rJrMZ6K3Jyj677Yg3Q8wruEcKE",
+     "version": "6.x"
+    },
+    {
+     "type": "compiler",
+     "name": "g++",
+     "id": "QmVseooVZ4dn2Vo4ikwKXzmBcqDH9avt4YWYtKmujP4KC8",
+     "version": ">5",
+     "inject": "ignore"
+    },
+    {
+     "id": "QmdUU5XHDKcTod2ytjZM4JmgFF8sdbzKipkfco2uF83oe1",
+     "type": "python-library",
+     "name": "wheel",
+     "version": ">=0"
+    },
+    {
+     "id": "QmRt6cEP2MsyxaAvyzHCH9FFwCn3NAtLRzbJdW4tVPBkSV",
+     "type": "language",
+     "name": "python",
+     "version": ">=3.6.1",
+     "lock": "minor"
+    }
+   ],
+   "command": [
+    "/bin/sh",
+    "{{ paths.mount }}/build.sh",
+    "pytoml-0.1.21/",
+    "3"
+   ]
+  },
+  "init": {
+   "link": [
+    {
+     "source": "usr",
+     "to": "/usr"
+    }
+   ]
+  }
+ },
+ "/QmRZUUf919DqctTLhYD3RWAn4VLgnUPJ5BG71MhtoNskJN/5dteyszJzTMuYA49pAbL4YrbuvQonh": {
+  "name": "dri2proto",
+  "type": "library",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "summary": "Header files for the X11 Direct Rendering Infrastructure 2 Extension (Support for hardware accelerated OpenGL drivers.)",
+  "build": {
+   "install": [
+    {
+     "type": "resource",
+     "subtype": "application/gzip",
+     "source": "https://www.x.org/releases/individual/proto/dri2proto-2.8.tar.gz",
+     "to": "dri2proto-2.8.tar.gz",
+     "name": "dri2proto 2.8 Source Code",
+     "actions": {
+      "unpack": "."
+     },
+     "id": "QmcYffxJJGWFr9mhLgq3d65ysyq7SyuiKR7FUPd2KgBAEA",
+     "uid": "QmWBdnTeDhvt5Jsp7Ge3BSWoGv3GsNzzA1u5ue1zsAaLxD",
+     "revision": "QmWr41iDjYHxMMMKnfjJcTsPkGfW2xhP7g3ybhjjCMueo2"
+    }
+   ],
+   "dependencies": [
+    {
+     "type": "collection",
+     "name": "build",
+     "id": "QmQ1i5VjdxdU7dWCkhpM7ccVDCBNPX2swTLQSHRiCW8sK1",
+     "version": "1.0"
+    },
+    {
+     "type": "compiler",
+     "name": "g++",
+     "id": "QmVseooVZ4dn2Vo4ikwKXzmBcqDH9avt4YWYtKmujP4KC8",
+     "version": ">5"
+    },
+    {
+     "type": "library",
+     "name": "xorg-macros",
+     "id": "QmXAQ6k7C96pq9jiaHpf2cCKNt6Ahbbv3GZJ6359qjdJYA",
+     "version": "1.x"
+    }
+   ],
+   "command": [
+    "/bin/bash",
+    "build.sh"
+   ]
+  },
+  "init": {
+   "link": [
+    {
+     "source": "usr/lib",
+     "to": "/usr/lib"
+    },
+    {
+     "source": "usr/include",
+     "to": "/usr/include"
+    },
+    {
+     "source": "usr/share",
+     "to": "/usr/share"
+    }
+   ]
+  }
+ },
+ "/QmSBUPWoMYcPjatx6FbHSdef6XJTwrUPwFUgj7s1v8hBcF/5dt1Wr28fbW6C6Yh1xgcFtijPutiEe": {
+  "name": "Xv",
+  "type": "library",
+  "summary": "The X Video Extension (Video effect and hardware support) client library for the X11 protocol.",
+  "license": "MIT/X11",
+  "website": "http://xorg.freedesktop.org/",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "dependencies": [
+   {
+    "name": "Xext",
+    "type": "library",
+    "id": "Qma9Ynk1AcvFtS2Vw3yAqtxvKiJkCnsikb2hoXC67tVXmE",
+    "version": "1.x"
+   },
+   {
+    "name": "videoproto",
+    "type": "library",
+    "id": "QmV396NyLDjs6wvbksCB3UqvCsqB3TCvYjLgTcUGg8G7W4",
+    "version": "2.x"
+   }
+  ],
+  "build": {
+   "install": [
+    {
+     "type": "resource",
+     "subtype": "application/gzip",
+     "source": "https://xorg.freedesktop.org/releases/individual/lib/libXv-1.0.11.tar.gz",
+     "to": "libXv-1.0.11.tar.gz",
+     "name": "libXv 1.0.11 Source Code",
+     "actions": {
+      "unpack": "."
+     },
+     "id": "QmWPNUUL17u2Xw5fLK182zDj4empBkCoZLWahKJEsYuc1N",
+     "uid": "QmUGQctXzHbSbquc1iX79DLonCpYudA1LL2kc46qDuckni",
+     "revision": "QmbY1nHs1Lmpqw3yxNkbP2yXvxNtjb1U3ksoTtvnxTAibJ"
+    }
+   ],
+   "dependencies": [
+    {
+     "type": "collection",
+     "name": "build",
+     "id": "QmQ1i5VjdxdU7dWCkhpM7ccVDCBNPX2swTLQSHRiCW8sK1",
+     "version": "1.0"
+    },
+    {
+     "type": "compiler",
+     "name": "g++",
+     "id": "QmVseooVZ4dn2Vo4ikwKXzmBcqDH9avt4YWYtKmujP4KC8",
+     "version": ">5"
+    }
+   ],
+   "command": [
+    "/bin/bash",
+    "build.sh"
+   ]
+  },
+  "init": {
+   "link": [
+    {
+     "source": "usr/lib",
+     "to": "/usr/lib"
+    },
+    {
+     "source": "usr/include",
+     "to": "/usr/include"
+    },
+    {
+     "source": "usr/share",
+     "to": "/usr/share"
+    }
+   ]
+  }
+ },
+ "/QmezgCkdQwSQxjJ6LUJBCnU1SYHPgmuB99xSwVu4vRztsv/5dtBs9REWRFY3E2MFz8CQjd6buTQN5": {
+  "name": "g-ir-annotation-tool",
+  "type": "application",
+  "summary": "A middleware layer between C libraries and language bindings.",
+  "description": "GObject introspection is a middleware layer between C libraries (using GObject) and language bindings. The C library can be scanned at compile time and generate a metadata file, in addition to the actual native C library. Then at runtime, language bindings can read this metadata and automatically provide bindings to call into the C library.",
+  "license": [
+   "LGPL 2.0",
+   "GPL 2.0"
+  ],
+  "website": "https://wiki.gnome.org/Projects/GObjectIntrospection",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "dependencies": [
+   {
+    "id": "QmRt6cEP2MsyxaAvyzHCH9FFwCn3NAtLRzbJdW4tVPBkSV",
+    "type": "language",
+    "name": "python",
+    "version": "3.x"
+   },
+   {
+    "id": "QmaXuH29d81R1LLGMcPehug8duvNkWPc1LaLget77Upjjw",
+    "version": "1.x",
+    "type": "python-library",
+    "name": "Mako"
+   }
+  ],
+  "init": {
+   "link": [
+    {
+     "source": "usr/lib",
+     "to": "/usr/lib"
+    },
+    {
+     "source": "usr/include",
+     "to": "/usr/include"
+    },
+    {
+     "source": "usr/share",
+     "to": "/usr/share"
+    },
+    {
+     "source": "usr/bin",
+     "to": "/usr/bin"
+    }
+   ]
+  },
+  "run": {
+   "command": "usr/bin/g-ir-annotation-tool"
+  },
+  "id": "QmezgCkdQwSQxjJ6LUJBCnU1SYHPgmuB99xSwVu4vRztsv",
+  "uid": "QmWm56BWYoCoun5oMJqXx323s8GXUTg9TaRcjhGyQHAUyR",
+  "owner": {
+   "id": "QmbacozUNnJW8xWCmDEWtzL9fQZV8PSpYeWXoYFxk84Mv4",
+   "uid": "QmXEieRTJSP8fzmk9gZZfLqTdnDKDEBJSBDSCgmGc1gRae"
+  }
+ },
+ "/QmUCdt1FvdAiVDHuTPEC7aDSngyue86YvGqjv8fTdAeizZ/5dtBs9REWRFY3E2MFz8CQjd6buTQN5": {
+  "name": "g-ir-compiler",
+  "type": "application",
+  "summary": "A middleware layer between C libraries and language bindings.",
+  "description": "g-ir-compiler converts one or more GIR files into one or more typelib.  The output will be written to\nstandard output unless the --output is specified.",
+  "license": [
+   "LGPL 2.0",
+   "GPL 2.0"
+  ],
+  "website": "https://wiki.gnome.org/Projects/GObjectIntrospection",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "dependencies": [
+   {
+    "id": "QmRt6cEP2MsyxaAvyzHCH9FFwCn3NAtLRzbJdW4tVPBkSV",
+    "type": "language",
+    "name": "python",
+    "version": "3.x"
+   },
+   {
+    "id": "QmaXuH29d81R1LLGMcPehug8duvNkWPc1LaLget77Upjjw",
+    "version": "1.x",
+    "type": "python-library",
+    "name": "Mako"
+   }
+  ],
+  "init": {
+   "link": [
+    {
+     "source": "usr/lib",
+     "to": "/usr/lib"
+    },
+    {
+     "source": "usr/include",
+     "to": "/usr/include"
+    },
+    {
+     "source": "usr/share",
+     "to": "/usr/share"
+    },
+    {
+     "source": "usr/bin",
+     "to": "/usr/bin"
+    }
+   ]
+  },
+  "run": {
+   "command": "usr/bin/g-ir-compiler"
+  },
+  "id": "QmUCdt1FvdAiVDHuTPEC7aDSngyue86YvGqjv8fTdAeizZ",
+  "uid": "Qmecu1akxEEwfp6uXCZKyZuW6ACXnZ2ALfE51C2g7vPm1G",
+  "owner": {
+   "id": "QmbacozUNnJW8xWCmDEWtzL9fQZV8PSpYeWXoYFxk84Mv4",
+   "uid": "QmXEieRTJSP8fzmk9gZZfLqTdnDKDEBJSBDSCgmGc1gRae"
+  }
+ },
+ "/Qma7fEDybJkJ1fN85RNtU7YtXHnR3q5hcHxuHWwBKuMbKe/5dtBs9REWRFY3E2MFz8CQjd6buTQN5": {
+  "name": "g-ir-generate",
+  "type": "application",
+  "summary": "A middleware layer between C libraries and language bindings.",
+  "description": "g-ir-generate  is an GIR generator, using the repository API. It generates GIR files from a raw type-\nlib or in a shared library (--shlib).  The output will be  written  to  standard  output  unless  the\n--output is specified.",
+  "license": [
+   "LGPL 2.0",
+   "GPL 2.0"
+  ],
+  "website": "https://wiki.gnome.org/Projects/GObjectIntrospection",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "dependencies": [
+   {
+    "id": "QmRt6cEP2MsyxaAvyzHCH9FFwCn3NAtLRzbJdW4tVPBkSV",
+    "type": "language",
+    "name": "python",
+    "version": "3.x"
+   },
+   {
+    "id": "QmaXuH29d81R1LLGMcPehug8duvNkWPc1LaLget77Upjjw",
+    "version": "1.x",
+    "type": "python-library",
+    "name": "Mako"
+   }
+  ],
+  "init": {
+   "link": [
+    {
+     "source": "usr/lib",
+     "to": "/usr/lib"
+    },
+    {
+     "source": "usr/include",
+     "to": "/usr/include"
+    },
+    {
+     "source": "usr/share",
+     "to": "/usr/share"
+    },
+    {
+     "source": "usr/bin",
+     "to": "/usr/bin"
+    }
+   ]
+  },
+  "run": {
+   "command": "usr/bin/g-ir-generate"
+  },
+  "id": "Qma7fEDybJkJ1fN85RNtU7YtXHnR3q5hcHxuHWwBKuMbKe",
+  "uid": "Qmbtgqf2WZ8ShXAumEsJvCANj9tHNZoDnMRf18FNBVsCuA",
+  "owner": {
+   "id": "QmbacozUNnJW8xWCmDEWtzL9fQZV8PSpYeWXoYFxk84Mv4",
+   "uid": "QmXEieRTJSP8fzmk9gZZfLqTdnDKDEBJSBDSCgmGc1gRae"
+  }
+ },
+ "/QmdKnu6nwqRPomtam5JZp4HMEMmgjKxvfqEmWJ4ARX2RAk/5dtBs9REWRFY3E2MFz8CQjd6buTQN5": {
+  "name": "g-ir-inspect",
+  "type": "application",
+  "summary": "A middleware layer between C libraries and language bindings.",
+  "description": "GObject introspection is a middleware layer between C libraries (using GObject) and language bindings. The C library can be scanned at compile time and generate a metadata file, in addition to the actual native C library. Then at runtime, language bindings can read this metadata and automatically provide bindings to call into the C library.",
+  "license": [
+   "LGPL 2.0",
+   "GPL 2.0"
+  ],
+  "website": "https://wiki.gnome.org/Projects/GObjectIntrospection",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "dependencies": [
+   {
+    "id": "QmRt6cEP2MsyxaAvyzHCH9FFwCn3NAtLRzbJdW4tVPBkSV",
+    "type": "language",
+    "name": "python",
+    "version": "3.x"
+   },
+   {
+    "id": "QmaXuH29d81R1LLGMcPehug8duvNkWPc1LaLget77Upjjw",
+    "version": "1.x",
+    "type": "python-library",
+    "name": "Mako"
+   }
+  ],
+  "init": {
+   "link": [
+    {
+     "source": "usr/lib",
+     "to": "/usr/lib"
+    },
+    {
+     "source": "usr/include",
+     "to": "/usr/include"
+    },
+    {
+     "source": "usr/share",
+     "to": "/usr/share"
+    },
+    {
+     "source": "usr/bin",
+     "to": "/usr/bin"
+    }
+   ]
+  },
+  "run": {
+   "command": "usr/bin/g-ir-inspect"
+  },
+  "id": "QmdKnu6nwqRPomtam5JZp4HMEMmgjKxvfqEmWJ4ARX2RAk",
+  "uid": "QmcnLQ6aZMfLHa6juJ98KBEd8FikWKGNWfve9rwvJDeMcA",
+  "owner": {
+   "id": "QmbacozUNnJW8xWCmDEWtzL9fQZV8PSpYeWXoYFxk84Mv4",
+   "uid": "QmXEieRTJSP8fzmk9gZZfLqTdnDKDEBJSBDSCgmGc1gRae"
+  }
+ },
+ "/QmSXkysjfeECVimxWytqw7LJ6xvdsNpjvaFLwpRnGbX32w/5dtBs9REWRFY3E2MFz8CQjd6buTQN5": {
+  "name": "g-ir-scanner",
+  "type": "application",
+  "summary": "A middleware layer between C libraries and language bindings.",
+  "description": "g-ir-scanner  is  a  tool  which generates GIR XML files by parsing headers and introspecting GObject\nbased libraries.  It is usually invoked during the normal build step for a project and  the  informa-\ntion  is  saved to disk and later installed, so that language bindings and other applications can use\nit.  Header files and source files are passed in as arguments on the command line.  The suffix deter-\nmines  whether  a file be treated as a source file (.c) or a header file (.h). Currently only C based\nlibraries are supported by the scanner.",
+  "license": [
+   "LGPL 2.0",
+   "GPL 2.0"
+  ],
+  "website": "https://wiki.gnome.org/Projects/GObjectIntrospection",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "dependencies": [
+   {
+    "id": "QmRt6cEP2MsyxaAvyzHCH9FFwCn3NAtLRzbJdW4tVPBkSV",
+    "type": "language",
+    "name": "python",
+    "version": "3.x"
+   },
+   {
+    "id": "QmaXuH29d81R1LLGMcPehug8duvNkWPc1LaLget77Upjjw",
+    "version": "1.x",
+    "type": "python-library",
+    "name": "Mako"
+   }
+  ],
+  "init": {
+   "link": [
+    {
+     "source": "usr/lib",
+     "to": "/usr/lib"
+    },
+    {
+     "source": "usr/include",
+     "to": "/usr/include"
+    },
+    {
+     "source": "usr/share",
+     "to": "/usr/share"
+    },
+    {
+     "source": "usr/bin",
+     "to": "/usr/bin"
+    }
+   ]
+  },
+  "run": {
+   "command": "usr/bin/g-ir-scanner"
+  },
+  "id": "QmSXkysjfeECVimxWytqw7LJ6xvdsNpjvaFLwpRnGbX32w",
+  "uid": "QmUCf3qkvD7pBwdS7hrVYnqA3KT3LXrmruzWR4UePzA4b7",
+  "owner": {
+   "id": "QmbacozUNnJW8xWCmDEWtzL9fQZV8PSpYeWXoYFxk84Mv4",
+   "uid": "QmXEieRTJSP8fzmk9gZZfLqTdnDKDEBJSBDSCgmGc1gRae"
+  }
+ },
+ "/QmT4iguFFnSP2VvT3qYE2dbmKuZz9xyxJY4Eb37CKih5cN/5dtBs9REWRFY3E2MFz8CQjd6buTQN5": {
+  "name": "g-ir-doc-tool",
+  "type": "application",
+  "summary": "A middleware layer between C libraries and language bindings.",
+  "description": "GObject introspection is a middleware layer between C libraries (using GObject) and language bindings. The C library can be scanned at compile time and generate a metadata file, in addition to the actual native C library. Then at runtime, language bindings can read this metadata and automatically provide bindings to call into the C library.",
+  "license": [
+   "LGPL 2.0",
+   "GPL 2.0"
+  ],
+  "website": "https://wiki.gnome.org/Projects/GObjectIntrospection",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "dependencies": [
+   {
+    "id": "QmRt6cEP2MsyxaAvyzHCH9FFwCn3NAtLRzbJdW4tVPBkSV",
+    "type": "language",
+    "name": "python",
+    "version": "3.x"
+   },
+   {
+    "id": "QmaXuH29d81R1LLGMcPehug8duvNkWPc1LaLget77Upjjw",
+    "version": "1.x",
+    "type": "python-library",
+    "name": "Mako"
+   }
+  ],
+  "init": {
+   "link": [
+    {
+     "source": "usr/lib",
+     "to": "/usr/lib"
+    },
+    {
+     "source": "usr/include",
+     "to": "/usr/include"
+    },
+    {
+     "source": "usr/share",
+     "to": "/usr/share"
+    },
+    {
+     "source": "usr/bin",
+     "to": "/usr/bin"
+    }
+   ]
+  },
+  "run": {
+   "command": "usr/bin/g-ir-doc-tool"
+  },
+  "id": "QmT4iguFFnSP2VvT3qYE2dbmKuZz9xyxJY4Eb37CKih5cN",
+  "uid": "QmSYMsCT9QaXR2ZbxeCmbL5RkCYKvFqPKQ8qejjojP5yA4",
+  "owner": {
+   "id": "QmbacozUNnJW8xWCmDEWtzL9fQZV8PSpYeWXoYFxk84Mv4",
+   "uid": "QmXEieRTJSP8fzmk9gZZfLqTdnDKDEBJSBDSCgmGc1gRae"
+  }
+ },
+ "/QmbacozUNnJW8xWCmDEWtzL9fQZV8PSpYeWXoYFxk84Mv4/5dtBs9REWRFY3E2MFz8CQjd6buTQN5": {
+  "name": "gobject-introspection",
+  "type": "runtime",
+  "summary": "A middleware layer between C libraries and language bindings.",
+  "description": "GObject introspection is a middleware layer between C libraries (using GObject) and language bindings. The C library can be scanned at compile time and generate a metadata file, in addition to the actual native C library. Then at runtime, language bindings can read this metadata and automatically provide bindings to call into the C library.",
+  "license": [
+   "LGPL 2.0",
+   "GPL 2.0"
+  ],
+  "website": "https://wiki.gnome.org/Projects/GObjectIntrospection",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "dependencies": [
+   {
+    "id": "QmRt6cEP2MsyxaAvyzHCH9FFwCn3NAtLRzbJdW4tVPBkSV",
+    "type": "language",
+    "name": "python",
+    "version": "3.x"
+   },
+   {
+    "id": "QmaXuH29d81R1LLGMcPehug8duvNkWPc1LaLget77Upjjw",
+    "version": "1.x",
+    "type": "python-library",
+    "name": "Mako"
+   }
+  ],
+  "build": {
+   "install": [
+    {
+     "type": "resource",
+     "subtype": "git",
+     "source": "https://git.gnome.org/browse/gobject-introspection",
+     "to": "gobject-introspection",
+     "name": "GNOME gobject-introspection Source Code Repository",
+     "revision": "5duGLyYqLnwaH6M7PN5UytTZpAwrpf",
+     "id": "QmcUcwnHMck8jrGMfgAZ7KdkCJYYci6rXYxHdVvNJX2vqX",
+     "uid": "QmUC5Jym2t4eqEU3R39saNcGoALByHWnYjFvqiiZ44PwWc"
+    }
+   ],
+   "dependencies": [
+    {
+     "name": "gtk-doc",
+     "type": "application",
+     "id": "QmYP1djQ3zinqJ8FJ4VXfn8nTMD23gjkiStqc7uo6iWA9x",
+     "version": "1.x"
+    },
+    {
+     "type": "collection",
+     "name": "build",
+     "id": "QmQ1i5VjdxdU7dWCkhpM7ccVDCBNPX2swTLQSHRiCW8sK1",
+     "version": "1.0"
+    },
+    {
+     "type": "compiler",
+     "name": "g++",
+     "id": "QmVseooVZ4dn2Vo4ikwKXzmBcqDH9avt4YWYtKmujP4KC8",
+     "version": ">5"
+    },
+    {
+     "name": "gettext",
+     "type": "collection",
+     "id": "QmQGjhRYdiZUNTprxVbuJjub1zP3jN2SfKNE837bK8qcZK",
+     "version": "0.19.x"
+    },
+    {
+     "name": "autoconf",
+     "id": "QmPs1dypAif2WGKT4LND2dBY8yDCKv5eDbhBwikzq1k4AM",
+     "type": "collection",
+     "version": "2.x"
+    },
+    {
+     "name": "automake",
+     "type": "collection",
+     "id": "QmReFYohsdWmkbY5wUUWRpR2XCkfC479xfWF97W2LMUgpy",
+     "version": "1.x"
+    },
+    {
+     "type": "application",
+     "id": "QmUUovfhc49dsggUzTLCjyhKqtcaXbVKMkU7JarhN8PLKU",
+     "name": "m4",
+     "version": "1.x"
+    },
+    {
+     "name": "libtool",
+     "type": "application",
+     "id": "QmfBE1Mny7X1QQQmn8tp6RirGsog9ZJGNoaMeMdEMP2XVn",
+     "version": "2.x"
+    },
+    {
+     "name": "flex",
+     "type": "application",
+     "id": "QmYHtVoAi85oX7x1apYk8WXQPq6Qwi6y1A8HbHBnY5YwGA",
+     "version": "2.x"
+    },
+    {
+     "name": "bison",
+     "type": "application",
+     "id": "Qmab5FG64eiv4p85eiK7uHrTtZ5W48hwp2FMmmQHGVEW64",
+     "version": "3.x"
+    },
+    {
+     "id": "QmWgA54cNKkYfBdvjjfKQn2Cigqcz4HFCS5VpBtTVAvcN4",
+     "type": "library",
+     "name": "glib2",
+     "version": "2.x"
+    }
+   ],
+   "command": [
+    "/bin/bash",
+    "build.sh"
+   ]
+  },
+  "init": {
+   "link": [
+    {
+     "source": "usr/lib",
+     "to": "/usr/lib"
+    },
+    {
+     "source": "usr/include",
+     "to": "/usr/include"
+    },
+    {
+     "source": "usr/share",
+     "to": "/usr/share"
+    },
+    {
+     "source": "usr/bin",
+     "to": "/usr/bin"
+    }
+   ]
+  },
+  "includes": [
+   {
+    "name": "g-ir-compiler",
+    "type": "application",
+    "description": "g-ir-compiler converts one or more GIR files into one or more typelib.  The output will be written to\nstandard output unless the --output is specified.",
+    "run": {
+     "command": "usr/bin/g-ir-compiler"
+    },
+    "id": "QmUCdt1FvdAiVDHuTPEC7aDSngyue86YvGqjv8fTdAeizZ",
+    "uid": "Qmecu1akxEEwfp6uXCZKyZuW6ACXnZ2ALfE51C2g7vPm1G"
+   },
+   {
+    "name": "g-ir-generate",
+    "type": "application",
+    "description": "g-ir-generate  is an GIR generator, using the repository API. It generates GIR files from a raw type-\nlib or in a shared library (--shlib).  The output will be  written  to  standard  output  unless  the\n--output is specified.",
+    "run": {
+     "command": "usr/bin/g-ir-generate"
+    },
+    "id": "Qma7fEDybJkJ1fN85RNtU7YtXHnR3q5hcHxuHWwBKuMbKe",
+    "uid": "Qmbtgqf2WZ8ShXAumEsJvCANj9tHNZoDnMRf18FNBVsCuA"
+   },
+   {
+    "name": "g-ir-inspect",
+    "type": "application",
+    "run": {
+     "command": "usr/bin/g-ir-inspect"
+    },
+    "id": "QmdKnu6nwqRPomtam5JZp4HMEMmgjKxvfqEmWJ4ARX2RAk",
+    "uid": "QmcnLQ6aZMfLHa6juJ98KBEd8FikWKGNWfve9rwvJDeMcA"
+   },
+   {
+    "name": "g-ir-scanner",
+    "type": "application",
+    "description": "g-ir-scanner  is  a  tool  which generates GIR XML files by parsing headers and introspecting GObject\nbased libraries.  It is usually invoked during the normal build step for a project and  the  informa-\ntion  is  saved to disk and later installed, so that language bindings and other applications can use\nit.  Header files and source files are passed in as arguments on the command line.  The suffix deter-\nmines  whether  a file be treated as a source file (.c) or a header file (.h). Currently only C based\nlibraries are supported by the scanner.",
+    "run": {
+     "command": "usr/bin/g-ir-scanner"
+    },
+    "id": "QmSXkysjfeECVimxWytqw7LJ6xvdsNpjvaFLwpRnGbX32w",
+    "uid": "QmUCf3qkvD7pBwdS7hrVYnqA3KT3LXrmruzWR4UePzA4b7"
+   },
+   {
+    "name": "g-ir-annotation-tool",
+    "type": "application",
+    "run": {
+     "command": "usr/bin/g-ir-annotation-tool"
+    },
+    "id": "QmezgCkdQwSQxjJ6LUJBCnU1SYHPgmuB99xSwVu4vRztsv",
+    "uid": "QmWm56BWYoCoun5oMJqXx323s8GXUTg9TaRcjhGyQHAUyR"
+   },
+   {
+    "name": "g-ir-doc-tool",
+    "type": "application",
+    "run": {
+     "command": "usr/bin/g-ir-doc-tool"
+    },
+    "id": "QmT4iguFFnSP2VvT3qYE2dbmKuZz9xyxJY4Eb37CKih5cN",
+    "uid": "QmSYMsCT9QaXR2ZbxeCmbL5RkCYKvFqPKQ8qejjojP5yA4"
+   }
+  ]
+ },
+ "/QmQpyWQwLa9FfaYFQvb4yGR8nsu9Q71nxZXTwoYkXrKj4Z/5dtvujhbwF1754QbApTVF2iCVQzcTq": {
+  "name": "llvm",
+  "type": "compiler",
+  "organization": "LLVM Developer Group",
+  "website": "https://llvm.org/",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "license": "University of Illinois/NCSA Open Source License (BSD-Style)",
+  "summary": "The LLVM Core Toolchain.",
+  "init": {
+   "link": [
+    {
+     "source": "llvm/usr/bin",
+     "to": "/usr/bin"
+    },
+    {
+     "source": "llvm/usr/include",
+     "to": "/usr/include"
+    },
+    {
+     "source": "llvm/usr/share",
+     "to": "/usr/share"
+    },
+    {
+     "source": "llvm/usr/lib",
+     "to": "/usr/lib"
+    }
+   ],
+   "copy": [
+    {
+     "source": "llvm/usr/bin/llvm-config",
+     "to": "/usr/bin/llvm-config"
+    }
+   ]
+  },
+  "dependencies": [
+   {
+    "type": "library",
+    "name": "llvm"
+   },
+   {
+    "name": "perl",
+    "type": "language",
+    "id": "QmYhwLrzkbX2rsnAquUrLy2Z7maxedVVT9VBbVG34grFi5",
+    "version": "5.x"
+   }
+  ],
+  "id": "QmQpyWQwLa9FfaYFQvb4yGR8nsu9Q71nxZXTwoYkXrKj4Z",
+  "uid": "QmcAxyNza5Mmehtkd5AFhSX1bya1G6ECSjmEimpKcM1TYM",
+  "owner": {
+   "id": "QmfVJuTrbZFS4aqxmynzb8H2xXQ7Av9hxfwFSB8C5AZG63",
+   "uid": "QmX1wF8TajScAbuDuCAryVQ1iZrZnDxUoo1n5Wk2d4AnkE"
+  }
+ },
+ "/QmT2n3EvHxHXoGSo87hNfnRoPEKqFueu2FWmpNg3BHMAjE/5dtvujhbwF1754QbApTVF2iCVQzcTq": {
+  "name": "llvm",
+  "type": "library",
+  "organization": "LLVM Developer Group",
+  "website": "https://llvm.org/",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "license": "University of Illinois/NCSA Open Source License (BSD-Style)",
+  "summary": "LLVM Core Libraries.",
+  "init": {
+   "link": [
+    {
+     "source": "llvm-libs/usr/lib",
+     "to": "/usr/lib"
+    }
+   ]
+  },
+  "dependencies": [
+   {
+    "type": "library",
+    "name": "ffi",
+    "id": "QmTs25uVx8eJjNzAeUg6HS9mtmpVanv8YJky7j5HoUDdHJ",
+    "version": "3.x"
+   },
+   {
+    "type": "library",
+    "name": "zlib",
+    "id": "QmYX9GEqMaEFmT3arBuR6cxG1nbizF8aYb5uDPAR4hMqwb",
+    "version": "1.x"
+   },
+   {
+    "name": "ncurses",
+    "type": "library",
+    "id": "QmapksrQAa6rSXCFUvL7LRfduRgZLvpY2ZJauMeKFYaK8B",
+    "version": "6.x"
+   },
+   {
+    "type": "library",
+    "name": "edit",
+    "id": "QmUGTcWRZeWjv4tDaS5kN7GvqUEG8RG79vPU6hSYzjFgYm",
+    "version": ">=20190324.x"
+   }
+  ],
+  "id": "QmT2n3EvHxHXoGSo87hNfnRoPEKqFueu2FWmpNg3BHMAjE",
+  "uid": "QmcPRmbccycGV13y7z78NNpS6XGFnwr8rKMsejU3rhXyWQ",
+  "owner": {
+   "id": "QmfVJuTrbZFS4aqxmynzb8H2xXQ7Av9hxfwFSB8C5AZG63",
+   "uid": "QmX1wF8TajScAbuDuCAryVQ1iZrZnDxUoo1n5Wk2d4AnkE"
+  }
+ },
+ "/QmPrnaicraveXGGs6ArVJE6hUQkDWoggiQC3rmZoGynx9J/5dtvujhbwF1754QbApTVF2iCVQzcTq": {
+  "name": "lld",
+  "type": "application",
+  "organization": "LLVM Developer Group",
+  "website": "https://lld.llvm.org/",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "license": "University of Illinois/NCSA Open Source License (BSD-Style)",
+  "summary": "The LLVM Linker.",
+  "init": {
+   "link": [
+    {
+     "source": "llvm-lld/usr/bin",
+     "to": "/usr/bin"
+    },
+    {
+     "source": "llvm-lld/usr/include",
+     "to": "/usr/include"
+    },
+    {
+     "source": "llvm-lld/usr/share",
+     "to": "/usr/share"
+    },
+    {
+     "source": "llvm-lld/usr/lib",
+     "to": "/usr/lib"
+    }
+   ]
+  },
+  "dependencies": [
+   {
+    "type": "library",
+    "name": "llvm"
+   }
+  ],
+  "run": {
+   "command": "llvm-lld/usr/bin/lld"
+  },
+  "id": "QmPrnaicraveXGGs6ArVJE6hUQkDWoggiQC3rmZoGynx9J",
+  "uid": "QmQenq2NZKreiT5AJEHm5WkKxjV4VJ9wwzvHjsmHk7V1Nc",
+  "owner": {
+   "id": "QmfVJuTrbZFS4aqxmynzb8H2xXQ7Av9hxfwFSB8C5AZG63",
+   "uid": "QmX1wF8TajScAbuDuCAryVQ1iZrZnDxUoo1n5Wk2d4AnkE"
+  }
+ },
+ "/QmW34Kbbqmof9gBogGgGzhyyMUxusLez9bMDACdrEanV8w/5dtvujhbwF1754QbApTVF2iCVQzcTq": {
+  "name": "lldb",
+  "type": "application",
+  "organization": "LLVM Developer Group",
+  "website": "https://lldb.llvm.org/",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "license": "University of Illinois/NCSA Open Source License (BSD-Style)",
+  "summary": "The LLVM Debugger.",
+  "init": {
+   "link": [
+    {
+     "source": "llvm-lldb/usr/bin",
+     "to": "/usr/bin"
+    },
+    {
+     "source": "llvm-lldb/usr/include",
+     "to": "/usr/include"
+    },
+    {
+     "source": "llvm-lldb/usr/lib",
+     "to": "/usr/lib"
+    }
+   ]
+  },
+  "dependencies": [
+   {
+    "type": "library",
+    "name": "llvm"
+   },
+   {
+    "type": "library",
+    "name": "xml2",
+    "id": "QmfX7BD7KhzaLUT9fd6rt8SdCyHq5aEz1Mssmaj99Zmz9t",
+    "version": "2.x"
+   },
+   {
+    "type": "language",
+    "name": "python2",
+    "id": "QmZA4Hs6pWgUpoSGAzgv1H4JuCGGdNjxgBHXsE2Zo4GV3n",
+    "version": ">=2.6"
+   },
+   {
+    "type": "python-library",
+    "name": "six",
+    "id": "QmP7NJN1Xf51eytcFHAMR71mXdC8RuecG3yZFLmv74d1Qg",
+    "version": "1.x"
+   }
+  ],
+  "run": {
+   "command": "llvm-lldb/usr/bin/lldb"
+  },
+  "id": "QmW34Kbbqmof9gBogGgGzhyyMUxusLez9bMDACdrEanV8w",
+  "uid": "QmXdB5KxUCHK5deGd7vpdbFDEgrgqhb9q5JEg5ZvR3KQg3",
+  "owner": {
+   "id": "QmfVJuTrbZFS4aqxmynzb8H2xXQ7Av9hxfwFSB8C5AZG63",
+   "uid": "QmX1wF8TajScAbuDuCAryVQ1iZrZnDxUoo1n5Wk2d4AnkE"
+  }
+ },
+ "/QmevXNggCLXmErmm7j3ctxgVcjL3iAx4TZUXzyZbrcU8R5/5dtvujhbwF1754QbApTVF2iCVQzcTq": {
+  "name": "clang",
+  "type": "compiler",
+  "organization": "LLVM Developer Group",
+  "website": "https://clang.llvm.org/",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "license": "University of Illinois/NCSA Open Source License (BSD-Style)",
+  "summary": "An LLVM C Compiler.",
+  "init": {
+   "link": [
+    {
+     "source": "clang/usr/bin",
+     "to": "/usr/bin"
+    },
+    {
+     "source": "clang/usr/include",
+     "to": "/usr/include"
+    },
+    {
+     "source": "clang/usr/share",
+     "to": "/usr/share"
+    },
+    {
+     "source": "clang/usr/lib",
+     "to": "/usr/lib"
+    }
+   ]
+  },
+  "dependencies": [
+   {
+    "type": "library",
+    "name": "llvm"
+   },
+   {
+    "type": "library",
+    "name": "xml2",
+    "id": "QmfX7BD7KhzaLUT9fd6rt8SdCyHq5aEz1Mssmaj99Zmz9t",
+    "version": "2.x"
+   },
+   {
+    "id": "QmQ4eKhe2CJWBvCYBBeKYiBSxQwPFJtvF3H8wBN7iGBVp9",
+    "version": "2.x",
+    "type": "runtime",
+    "name": "glibc",
+    "inject": "init"
+   }
+  ],
+  "run": {
+   "command": "clang/usr/bin/clang"
+  },
+  "id": "QmevXNggCLXmErmm7j3ctxgVcjL3iAx4TZUXzyZbrcU8R5",
+  "uid": "QmTKYZdds6XxeWcJMNjqg2XFEAmg1RhBD5v5nLNYFFzKjM",
+  "owner": {
+   "id": "QmfVJuTrbZFS4aqxmynzb8H2xXQ7Av9hxfwFSB8C5AZG63",
+   "uid": "QmX1wF8TajScAbuDuCAryVQ1iZrZnDxUoo1n5Wk2d4AnkE"
+  }
+ },
+ "/QmZrV91TPLZp5y9szWyhiEZqNaLy229AJKMzHZvrq7cZyy/5dtvujhbwF1754QbApTVF2iCVQzcTq": {
+  "name": "clang-tools-extra",
+  "type": "collection",
+  "organization": "LLVM Developer Group",
+  "website": "https://clang.llvm.org/",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "license": "University of Illinois/NCSA Open Source License (BSD-Style)",
+  "summary": "Extra tools built using clang's tooling APIs.",
+  "init": {
+   "link": [
+    {
+     "source": "clang-tools-extra/usr/bin",
+     "to": "/usr/bin"
+    },
+    {
+     "source": "clang-tools-extra/usr/lib",
+     "to": "/usr/lib"
+    },
+    {
+     "source": "clang-tools-extra/usr/share",
+     "to": "/usr/share"
+    }
+   ]
+  },
+  "dependencies": [
+   {
+    "type": "compiler",
+    "name": "clang"
+   }
+  ],
+  "id": "QmZrV91TPLZp5y9szWyhiEZqNaLy229AJKMzHZvrq7cZyy",
+  "uid": "Qmdbk2w2i7RZhPfdC7Mou2tdkwiHgckPuVD55fqkXoJyPD",
+  "owner": {
+   "id": "QmfVJuTrbZFS4aqxmynzb8H2xXQ7Av9hxfwFSB8C5AZG63",
+   "uid": "QmX1wF8TajScAbuDuCAryVQ1iZrZnDxUoo1n5Wk2d4AnkE"
+  }
+ },
+ "/QmfVJuTrbZFS4aqxmynzb8H2xXQ7Av9hxfwFSB8C5AZG63/5dtvujhbwF1754QbApTVF2iCVQzcTq": {
+  "name": "LLVM",
+  "type": "collection",
+  "organization": "LLVM Developer Group",
+  "website": "https://llvm.org/",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "license": "University of Illinois/NCSA Open Source License (BSD-Style)",
+  "summary": "A collection of modular and reusable compiler and toolchain technologies.",
+  "includes": [
+   {
+    "name": "llvm",
+    "type": "compiler",
+    "summary": "The LLVM Core Toolchain.",
+    "dependencies": [
+     {
+      "type": "library",
+      "name": "llvm"
+     },
+     {
+      "name": "perl",
+      "type": "language",
+      "id": "QmYhwLrzkbX2rsnAquUrLy2Z7maxedVVT9VBbVG34grFi5",
+      "version": "5.x"
+     }
+    ],
+    "init": {
+     "link": [
+      {
+       "source": "llvm/usr/bin",
+       "to": "/usr/bin"
+      },
+      {
+       "source": "llvm/usr/include",
+       "to": "/usr/include"
+      },
+      {
+       "source": "llvm/usr/share",
+       "to": "/usr/share"
+      },
+      {
+       "source": "llvm/usr/lib",
+       "to": "/usr/lib"
+      }
+     ],
+     "copy": [
+      {
+       "source": "llvm/usr/bin/llvm-config",
+       "to": "/usr/bin/llvm-config"
+      }
+     ]
+    },
+    "id": "QmQpyWQwLa9FfaYFQvb4yGR8nsu9Q71nxZXTwoYkXrKj4Z",
+    "uid": "QmcAxyNza5Mmehtkd5AFhSX1bya1G6ECSjmEimpKcM1TYM"
+   },
+   {
+    "name": "llvm",
+    "type": "library",
+    "summary": "LLVM Core Libraries.",
+    "dependencies": [
+     {
+      "type": "library",
+      "name": "ffi",
+      "id": "QmTs25uVx8eJjNzAeUg6HS9mtmpVanv8YJky7j5HoUDdHJ",
+      "version": "3.x"
+     },
+     {
+      "type": "library",
+      "name": "zlib",
+      "id": "QmYX9GEqMaEFmT3arBuR6cxG1nbizF8aYb5uDPAR4hMqwb",
+      "version": "1.x"
+     },
+     {
+      "name": "ncurses",
+      "type": "library",
+      "id": "QmapksrQAa6rSXCFUvL7LRfduRgZLvpY2ZJauMeKFYaK8B",
+      "version": "6.x"
+     },
+     {
+      "type": "library",
+      "name": "edit",
+      "id": "QmUGTcWRZeWjv4tDaS5kN7GvqUEG8RG79vPU6hSYzjFgYm",
+      "version": ">=20190324.x"
+     }
+    ],
+    "init": {
+     "link": [
+      {
+       "source": "llvm-libs/usr/lib",
+       "to": "/usr/lib"
+      }
+     ]
+    },
+    "id": "QmT2n3EvHxHXoGSo87hNfnRoPEKqFueu2FWmpNg3BHMAjE",
+    "uid": "QmcPRmbccycGV13y7z78NNpS6XGFnwr8rKMsejU3rhXyWQ"
+   },
+   {
+    "name": "lld",
+    "type": "application",
+    "summary": "The LLVM Linker.",
+    "website": "https://lld.llvm.org/",
+    "dependencies": [
+     {
+      "type": "library",
+      "name": "llvm"
+     }
+    ],
+    "run": {
+     "command": "llvm-lld/usr/bin/lld"
+    },
+    "init": {
+     "link": [
+      {
+       "source": "llvm-lld/usr/bin",
+       "to": "/usr/bin"
+      },
+      {
+       "source": "llvm-lld/usr/include",
+       "to": "/usr/include"
+      },
+      {
+       "source": "llvm-lld/usr/share",
+       "to": "/usr/share"
+      },
+      {
+       "source": "llvm-lld/usr/lib",
+       "to": "/usr/lib"
+      }
+     ]
+    },
+    "id": "QmPrnaicraveXGGs6ArVJE6hUQkDWoggiQC3rmZoGynx9J",
+    "uid": "QmQenq2NZKreiT5AJEHm5WkKxjV4VJ9wwzvHjsmHk7V1Nc"
+   },
+   {
+    "name": "lldb",
+    "type": "application",
+    "summary": "The LLVM Debugger.",
+    "website": "https://lldb.llvm.org/",
+    "dependencies": [
+     {
+      "type": "library",
+      "name": "llvm"
+     },
+     {
+      "type": "library",
+      "name": "xml2",
+      "id": "QmfX7BD7KhzaLUT9fd6rt8SdCyHq5aEz1Mssmaj99Zmz9t",
+      "version": "2.x"
+     },
+     {
+      "type": "language",
+      "name": "python2",
+      "id": "QmZA4Hs6pWgUpoSGAzgv1H4JuCGGdNjxgBHXsE2Zo4GV3n",
+      "version": ">=2.6"
+     },
+     {
+      "type": "python-library",
+      "name": "six",
+      "id": "QmP7NJN1Xf51eytcFHAMR71mXdC8RuecG3yZFLmv74d1Qg",
+      "version": "1.x"
+     }
+    ],
+    "run": {
+     "command": "llvm-lldb/usr/bin/lldb"
+    },
+    "init": {
+     "link": [
+      {
+       "source": "llvm-lldb/usr/bin",
+       "to": "/usr/bin"
+      },
+      {
+       "source": "llvm-lldb/usr/include",
+       "to": "/usr/include"
+      },
+      {
+       "source": "llvm-lldb/usr/lib",
+       "to": "/usr/lib"
+      }
+     ]
+    },
+    "id": "QmW34Kbbqmof9gBogGgGzhyyMUxusLez9bMDACdrEanV8w",
+    "uid": "QmXdB5KxUCHK5deGd7vpdbFDEgrgqhb9q5JEg5ZvR3KQg3"
+   },
+   {
+    "name": "clang",
+    "type": "compiler",
+    "website": "https://clang.llvm.org/",
+    "summary": "An LLVM C Compiler.",
+    "dependencies": [
+     {
+      "type": "library",
+      "name": "llvm"
+     },
+     {
+      "type": "library",
+      "name": "xml2",
+      "id": "QmfX7BD7KhzaLUT9fd6rt8SdCyHq5aEz1Mssmaj99Zmz9t",
+      "version": "2.x"
+     },
+     {
+      "id": "QmQ4eKhe2CJWBvCYBBeKYiBSxQwPFJtvF3H8wBN7iGBVp9",
+      "version": "2.x",
+      "type": "runtime",
+      "name": "glibc",
+      "inject": "init"
+     }
+    ],
+    "run": {
+     "command": "clang/usr/bin/clang"
+    },
+    "init": {
+     "link": [
+      {
+       "source": "clang/usr/bin",
+       "to": "/usr/bin"
+      },
+      {
+       "source": "clang/usr/include",
+       "to": "/usr/include"
+      },
+      {
+       "source": "clang/usr/share",
+       "to": "/usr/share"
+      },
+      {
+       "source": "clang/usr/lib",
+       "to": "/usr/lib"
+      }
+     ]
+    },
+    "id": "QmevXNggCLXmErmm7j3ctxgVcjL3iAx4TZUXzyZbrcU8R5",
+    "uid": "QmTKYZdds6XxeWcJMNjqg2XFEAmg1RhBD5v5nLNYFFzKjM"
+   },
+   {
+    "name": "clang-tools-extra",
+    "type": "collection",
+    "website": "https://clang.llvm.org/",
+    "summary": "Extra tools built using clang's tooling APIs.",
+    "dependencies": [
+     {
+      "type": "compiler",
+      "name": "clang"
+     }
+    ],
+    "init": {
+     "link": [
+      {
+       "source": "clang-tools-extra/usr/bin",
+       "to": "/usr/bin"
+      },
+      {
+       "source": "clang-tools-extra/usr/lib",
+       "to": "/usr/lib"
+      },
+      {
+       "source": "clang-tools-extra/usr/share",
+       "to": "/usr/share"
+      }
+     ]
+    },
+    "id": "QmZrV91TPLZp5y9szWyhiEZqNaLy229AJKMzHZvrq7cZyy",
+    "uid": "Qmdbk2w2i7RZhPfdC7Mou2tdkwiHgckPuVD55fqkXoJyPD"
+   }
+  ],
+  "build": {
+   "install": [
+    {
+     "type": "resource",
+     "subtype": "application/x-xz",
+     "source": "http://releases.llvm.org/7.1.0/llvm-7.1.0.src.tar.xz",
+     "to": "llvm-7.1.0.src.tar.xz",
+     "name": "LLVM Core 7.1.0 Source Code",
+     "actions": {
+      "unpack": "."
+     },
+     "id": "QmWaTJmbFW4kML4Aq12KRXZoVoTnnDwJhm1TnpvpnDwwVt",
+     "uid": "QmXsEwgBJfbtMj5YNFbDXU36pUSvUdPqoRkLTVWfCFzAQU",
+     "revision": "QmQDAfvynFCxp3pgVmCPw1xceykyJVdJBr35ukgsB9G7o9"
+    },
+    {
+     "type": "resource",
+     "subtype": "application/x-xz",
+     "source": "http://releases.llvm.org/7.1.0/cfe-7.1.0.src.tar.xz",
+     "to": "cfe-7.1.0.src.tar.xz",
+     "name": "LLVM CFE 7.1.0 Source Code",
+     "actions": {
+      "unpack": "."
+     },
+     "id": "QmPEwR4JTj2kdgxaztyvHBP1bKLMQrEK4dNJJNVVSBMkrf",
+     "uid": "QmasH4MkffH8KtLEaaGcNW4sLcquNwCuk9qNVN3PqycJRn",
+     "revision": "Qme46w2uxzZCRyYbanqCHSDA2TB1vY32VZ9Cz3qccYzxn8"
+    },
+    {
+     "type": "resource",
+     "subtype": "application/x-xz",
+     "source": "http://releases.llvm.org/7.1.0/clang-tools-extra-7.1.0.src.tar.xz",
+     "to": "clang-tools-extra-7.1.0.src.tar.xz",
+     "name": "LLVM clang tools extra 7.1.0 Source Code",
+     "actions": {
+      "unpack": "."
+     },
+     "id": "QmSrg69mUVZjB4qKD88HzBMapaDEQAXULX4LAjXWiTosGW",
+     "uid": "QmdgABPCspW32XUe6V1czs7SUjyMFM8ZejhiKfBwdhUrxH",
+     "revision": "QmQHNFEZWuwbVfWpixpxSw4ceorP4Dp2cGPUEdL541Z38L"
+    },
+    {
+     "type": "resource",
+     "subtype": "application/x-xz",
+     "source": "http://releases.llvm.org/7.1.0/compiler-rt-7.1.0.src.tar.xz",
+     "to": "compiler-rt-7.1.0.src.tar.xz",
+     "name": "LLVM Compiler Runtime 7.1.0 Source Code",
+     "actions": {
+      "unpack": "."
+     },
+     "id": "QmZgSCtQ5DfYYMg2HkJdRRzTbDhrQqUuHruKP7iuMXZw7z",
+     "uid": "QmXHaVBfhWiEWJT1Vwr3oe9dyZGyQgtKo8ZtQZoz1fNPDX",
+     "revision": "QmNi4HWvBHo3XHajxgBtYADocJW2twBgQBL1f8PEt1UtUw"
+    },
+    {
+     "type": "resource",
+     "subtype": "application/x-xz",
+     "source": "http://releases.llvm.org/7.1.0/lld-7.1.0.src.tar.xz",
+     "to": "lld-7.1.0.src.tar.xz",
+     "name": "LLVM lld 7.1.0 Source Code",
+     "actions": {
+      "unpack": "."
+     },
+     "id": "QmXcNns2b3tnFQNaYsHMsbGVp2eaaj2kMq6jkGuVnacB7M",
+     "uid": "QmZne96xXwpAq8i1MiK1BZ9mdutJVkN5wZKDk5q3cMagQ5",
+     "revision": "QmZBMkVZXZRwUQbSc7ZzeB6nprgvo4yxeMeMbbKp4hBsS6"
+    },
+    {
+     "type": "resource",
+     "subtype": "application/x-xz",
+     "source": "http://releases.llvm.org/7.1.0/lldb-7.1.0.src.tar.xz",
+     "to": "lldb-7.1.0.src.tar.xz",
+     "name": "LLVM lldb 7.1.0 Source Code",
+     "actions": {
+      "unpack": "."
+     },
+     "id": "QmbKkyijfdT6grNBkHG4dqiMtuakZk9oMUJSSHp4eEvjAp",
+     "uid": "QmU3vvZhFG9CpzHFSocJHgQjauJipC2uUJEFmzmX2nbiWT",
+     "revision": "QmYoHwk5HHvY6Ncbueq8QR7Qy2xnKEeKztjZVfYzQRCBM7"
+    }
+   ],
+   "dependencies": [
+    {
+     "type": "collection",
+     "name": "build",
+     "id": "QmQ1i5VjdxdU7dWCkhpM7ccVDCBNPX2swTLQSHRiCW8sK1",
+     "version": "1.0"
+    },
+    {
+     "type": "compiler",
+     "name": "g++",
+     "id": "QmVseooVZ4dn2Vo4ikwKXzmBcqDH9avt4YWYtKmujP4KC8",
+     "version": ">5"
+    },
+    {
+     "type": "language",
+     "name": "python2",
+     "id": "QmZA4Hs6pWgUpoSGAzgv1H4JuCGGdNjxgBHXsE2Zo4GV3n",
+     "version": ">=2.6"
+    },
+    {
+     "type": "python-library",
+     "name": "Sphinx-2",
+     "id": "QmNYW8N9MuFoaqWFd4PMuTfdnPWMfCjupgb1eMTGCyctFF",
+     "version": "1.x"
+    },
+    {
+     "type": "application",
+     "name": "swig",
+     "id": "QmUQKVuSs7ejv3ZCj2o7hJ5wn6mSEsfKbX2JSDrbQ7i2hT",
+     "version": "3.x"
+    },
+    {
+     "type": "language",
+     "name": "ocaml",
+     "id": "QmNj56a5yoo4vH3fwaGdVu3YxmSzaJipPK7GuqjHh1a5qH",
+     "version": "4.x"
+    },
+    {
+     "type": "library",
+     "name": "edit",
+     "id": "QmUGTcWRZeWjv4tDaS5kN7GvqUEG8RG79vPU6hSYzjFgYm",
+     "version": ">=20190324.x"
+    },
+    {
+     "type": "library",
+     "name": "ffi",
+     "id": "QmTs25uVx8eJjNzAeUg6HS9mtmpVanv8YJky7j5HoUDdHJ",
+     "version": "3.x"
+    },
+    {
+     "type": "application",
+     "name": "cmake",
+     "id": "QmdVY9L3MAexwVCcsBF8t6HnWaSFjTpzXUaDY76neXoxGT",
+     "version": "3.x"
+    }
+   ],
+   "command": [
+    "/bin/bash",
+    "build.sh"
+   ]
+  },
+  "init": {
+   "link": [
+    {
+     "source": "usr/lib",
+     "to": "/usr/lib"
+    },
+    {
+     "source": "usr/include",
+     "to": "/usr/include"
+    },
+    {
+     "source": "usr/share",
+     "to": "/usr/share"
+    }
+   ]
+  }
+ },
+ "/QmdUxFmKYKMPX1g5gcoZz1mmauGCx5ASgvys4WJt573Ne2/5dszAqetWsbYzGguGpJ4nFhv9LhNjE": {
+  "name": "lapack",
+  "type": "library",
+  "website": "https://www.netlib.org/",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "summary": "A C library that implements a set of Linear Algebra routines (Linear Algebra PACKage).",
+  "init": {
+   "link": [
+    {
+     "source": "lapack/usr/lib",
+     "to": "/usr/lib"
+    },
+    {
+     "source": "lapack/usr/include",
+     "to": "/usr/include"
+    },
+    {
+     "source": "lapack/usr/share",
+     "to": "/usr/share"
+    }
+   ]
+  },
+  "includes": [
+   {
+    "name": "blas",
+    "type": "library",
+    "summary": "A library that provides Basic Linear Algebra Subprograms.",
+    "dependencies": [],
+    "init": {
+     "link": [
+      {
+       "source": "blas/usr/bin",
+       "to": "/usr/bin"
+      },
+      {
+       "source": "blas/usr/include",
+       "to": "/usr/include"
+      },
+      {
+       "source": "blas/usr/share",
+       "to": "/usr/share"
+      },
+      {
+       "source": "blas/usr/lib",
+       "to": "/usr/lib"
+      }
+     ]
+    },
+    "id": "QmWAPNKpDNm8DgQoj9yVdaGEq6oGFgaTgcSMPjuQ8Y91Pp",
+    "uid": "QmcqUtWuLu8a5KKT1gv2si7WBgEPLPUPqznupDdhyyAhsS"
+   },
+   {
+    "name": "cblas",
+    "type": "library",
+    "summary": "A C interface to the BLAS library, which provides Basic Linear Algebra Subprograms.",
+    "dependencies": [
+     {
+      "name": "blas",
+      "type": "library"
+     }
+    ],
+    "init": {
+     "link": [
+      {
+       "source": "cblas/usr/bin",
+       "to": "/usr/bin"
+      },
+      {
+       "source": "cblas/usr/include",
+       "to": "/usr/include"
+      },
+      {
+       "source": "cblas/usr/share",
+       "to": "/usr/share"
+      },
+      {
+       "source": "cblas/usr/lib",
+       "to": "/usr/lib"
+      }
+     ]
+    },
+    "id": "QmaNo919YLBrZnyyyVf6mBjrxbi9n2byK8Gu2K4hEu9udT",
+    "uid": "QmebKPRFVaxU8NPAUi1ypQ11H1uNNudurDK3gqFLNdBxBZ"
+   },
+   {
+    "name": "lapacke",
+    "type": "library",
+    "summary": "A C interface to the LAPACK library, which provides a Linear Algebra PACKage.",
+    "dependencies": [
+     {
+      "name": "lapack",
+      "type": "library"
+     }
+    ],
+    "init": {
+     "link": [
+      {
+       "source": "lapacke/usr/bin",
+       "to": "/usr/bin"
+      },
+      {
+       "source": "lapacke/usr/include",
+       "to": "/usr/include"
+      },
+      {
+       "source": "lapacke/usr/share",
+       "to": "/usr/share"
+      },
+      {
+       "source": "lapacke/usr/lib",
+       "to": "/usr/lib"
+      }
+     ]
+    },
+    "id": "QmRUmiDFHp4fkpDzsis83HSZL7Gb3DRJ1hRDJtW8JgeNW8",
+    "uid": "QmcW9fepjp7U4P8ePDxcrfd8PNAkuM4LAsbMWVL4aBe1u4"
+   },
+   {
+    "name": "lapack",
+    "type": "documentation",
+    "summary": "A set of documentation for the lapack and blas libraries.",
+    "dependencies": [],
+    "init": {
+     "link": [
+      {
+       "source": "docs/usr/bin",
+       "to": "/usr/bin"
+      },
+      {
+       "source": "docs/usr/include",
+       "to": "/usr/include"
+      },
+      {
+       "source": "docs/usr/share",
+       "to": "/usr/share"
+      },
+      {
+       "source": "docs/usr/lib",
+       "to": "/usr/lib"
+      }
+     ]
+    },
+    "id": "QmWo9TYa6XKkgRJCcS9o424WY5L11Dt33mgUSXT93ZJHd4",
+    "uid": "QmPCuFDWtLpnCzSQsmEWqjpkzFRNUF9DwaEmG62XHLEbJr"
+   }
+  ],
+  "build": {
+   "install": [
+    {
+     "type": "resource",
+     "subtype": "application/gzip",
+     "source": "https://www.netlib.org/lapack/lapack-3.8.0.tar.gz",
+     "to": "lapack-3.8.0.tar.gz",
+     "name": "LAPACK 3.8.0 Source Code",
+     "actions": {
+      "unpack": "."
+     },
+     "id": "QmWbzCBmW5Ytn6538SLZdaEJqyCoPV8qvPSq2k6bVCC3u4",
+     "uid": "QmQk98Licw55LrXH84Gm3LiUkqvBjPB2MMW7fwc96UCyUV",
+     "revision": "QmdKxoC3j5uJY4YPrLVVs9xG9KMqZYRczLa7Beqh98EN7o"
+    }
+   ],
+   "dependencies": [
+    {
+     "type": "collection",
+     "name": "build",
+     "id": "QmQ1i5VjdxdU7dWCkhpM7ccVDCBNPX2swTLQSHRiCW8sK1",
+     "version": "1.0"
+    },
+    {
+     "type": "compiler",
+     "name": "g++",
+     "id": "QmVseooVZ4dn2Vo4ikwKXzmBcqDH9avt4YWYtKmujP4KC8",
+     "version": ">5"
+    },
+    {
+     "type": "compiler",
+     "name": "gfortran",
+     "id": "QmPZqTJFGdfgeA5CoVcYeQCEyxtjgWFGJTDYQicerHJtHf",
+     "version": ">5"
+    },
+    {
+     "type": "language",
+     "name": "python",
+     "id": "QmRt6cEP2MsyxaAvyzHCH9FFwCn3NAtLRzbJdW4tVPBkSV",
+     "version": ">=3.6"
+    },
+    {
+     "type": "application",
+     "name": "cmake",
+     "id": "QmdVY9L3MAexwVCcsBF8t6HnWaSFjTpzXUaDY76neXoxGT",
+     "version": "3.x"
+    },
+    {
+     "name": "doxygen",
+     "type": "application",
+     "id": "QmWubMkaD5BBZsKix4DyupC3NUb3ZWCZcdhmKLJrSnecKb",
+     "version": "1.x"
+    }
+   ],
+   "command": [
+    "/bin/bash",
+    "build.sh"
+   ]
+  }
+ },
+ "/QmWAPNKpDNm8DgQoj9yVdaGEq6oGFgaTgcSMPjuQ8Y91Pp/5dszAqetWsbYzGguGpJ4nFhv9LhNjE": {
+  "name": "blas",
+  "type": "library",
+  "website": "https://www.netlib.org/",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "summary": "A library that provides Basic Linear Algebra Subprograms.",
+  "init": {
+   "link": [
+    {
+     "source": "blas/usr/bin",
+     "to": "/usr/bin"
+    },
+    {
+     "source": "blas/usr/include",
+     "to": "/usr/include"
+    },
+    {
+     "source": "blas/usr/share",
+     "to": "/usr/share"
+    },
+    {
+     "source": "blas/usr/lib",
+     "to": "/usr/lib"
+    }
+   ]
+  },
+  "dependencies": [],
+  "id": "QmWAPNKpDNm8DgQoj9yVdaGEq6oGFgaTgcSMPjuQ8Y91Pp",
+  "uid": "QmcqUtWuLu8a5KKT1gv2si7WBgEPLPUPqznupDdhyyAhsS",
+  "owner": {
+   "id": "QmdUxFmKYKMPX1g5gcoZz1mmauGCx5ASgvys4WJt573Ne2",
+   "uid": "QmR3Dh1EdgpCB81TqAtgzGtxR6VdC335dsPzTGCybxJR96"
+  }
+ },
+ "/QmaNo919YLBrZnyyyVf6mBjrxbi9n2byK8Gu2K4hEu9udT/5dszAqetWsbYzGguGpJ4nFhv9LhNjE": {
+  "name": "cblas",
+  "type": "library",
+  "website": "https://www.netlib.org/",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "summary": "A C interface to the BLAS library, which provides Basic Linear Algebra Subprograms.",
+  "init": {
+   "link": [
+    {
+     "source": "cblas/usr/bin",
+     "to": "/usr/bin"
+    },
+    {
+     "source": "cblas/usr/include",
+     "to": "/usr/include"
+    },
+    {
+     "source": "cblas/usr/share",
+     "to": "/usr/share"
+    },
+    {
+     "source": "cblas/usr/lib",
+     "to": "/usr/lib"
+    }
+   ]
+  },
+  "dependencies": [
+   {
+    "name": "blas",
+    "type": "library"
+   }
+  ],
+  "id": "QmaNo919YLBrZnyyyVf6mBjrxbi9n2byK8Gu2K4hEu9udT",
+  "uid": "QmebKPRFVaxU8NPAUi1ypQ11H1uNNudurDK3gqFLNdBxBZ",
+  "owner": {
+   "id": "QmdUxFmKYKMPX1g5gcoZz1mmauGCx5ASgvys4WJt573Ne2",
+   "uid": "QmR3Dh1EdgpCB81TqAtgzGtxR6VdC335dsPzTGCybxJR96"
+  }
+ },
+ "/QmRUmiDFHp4fkpDzsis83HSZL7Gb3DRJ1hRDJtW8JgeNW8/5dszAqetWsbYzGguGpJ4nFhv9LhNjE": {
+  "name": "lapacke",
+  "type": "library",
+  "website": "https://www.netlib.org/",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "summary": "A C interface to the LAPACK library, which provides a Linear Algebra PACKage.",
+  "init": {
+   "link": [
+    {
+     "source": "lapacke/usr/bin",
+     "to": "/usr/bin"
+    },
+    {
+     "source": "lapacke/usr/include",
+     "to": "/usr/include"
+    },
+    {
+     "source": "lapacke/usr/share",
+     "to": "/usr/share"
+    },
+    {
+     "source": "lapacke/usr/lib",
+     "to": "/usr/lib"
+    }
+   ]
+  },
+  "dependencies": [
+   {
+    "name": "lapack",
+    "type": "library"
+   }
+  ],
+  "id": "QmRUmiDFHp4fkpDzsis83HSZL7Gb3DRJ1hRDJtW8JgeNW8",
+  "uid": "QmcW9fepjp7U4P8ePDxcrfd8PNAkuM4LAsbMWVL4aBe1u4",
+  "owner": {
+   "id": "QmdUxFmKYKMPX1g5gcoZz1mmauGCx5ASgvys4WJt573Ne2",
+   "uid": "QmR3Dh1EdgpCB81TqAtgzGtxR6VdC335dsPzTGCybxJR96"
+  }
+ },
+ "/QmWo9TYa6XKkgRJCcS9o424WY5L11Dt33mgUSXT93ZJHd4/5dszAqetWsbYzGguGpJ4nFhv9LhNjE": {
+  "name": "lapack",
+  "type": "documentation",
+  "website": "https://www.netlib.org/",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "summary": "A set of documentation for the lapack and blas libraries.",
+  "init": {
+   "link": [
+    {
+     "source": "docs/usr/bin",
+     "to": "/usr/bin"
+    },
+    {
+     "source": "docs/usr/include",
+     "to": "/usr/include"
+    },
+    {
+     "source": "docs/usr/share",
+     "to": "/usr/share"
+    },
+    {
+     "source": "docs/usr/lib",
+     "to": "/usr/lib"
+    }
+   ]
+  },
+  "dependencies": [],
+  "id": "QmWo9TYa6XKkgRJCcS9o424WY5L11Dt33mgUSXT93ZJHd4",
+  "uid": "QmPCuFDWtLpnCzSQsmEWqjpkzFRNUF9DwaEmG62XHLEbJr",
+  "owner": {
+   "id": "QmdUxFmKYKMPX1g5gcoZz1mmauGCx5ASgvys4WJt573Ne2",
+   "uid": "QmR3Dh1EdgpCB81TqAtgzGtxR6VdC335dsPzTGCybxJR96"
+  }
+ },
+ "/QmPQogaMrcNBP6DKDkNsKjkgAw5Jz7Emk53WbAFDAc8xdZ/5drUNefdR3CFxkpLU2wVZNZBwVrqpL": {
+  "type": "docker-environment",
+  "name": "Linux",
+  "environment": "docker",
+  "architecture": "x86-64",
+  "provides": {
+   "environment": "linux",
+   "architecture": "x86-64",
+   "init": {
+    "env": {
+     "C_INCLUDE_PATH": {
+      "separator": ":",
+      "unique": true
+     },
+     "CPLUS_INCLUDE_PATH": {
+      "separator": ":",
+      "unique": true
+     },
+     "LD_LIBRARY_PATH": {
+      "separator": ":",
+      "unique": true
+     },
+     "PATH": {
+      "separator": ":",
+      "unique": true
+     },
+     "COMPILER_PATH": {
+      "separator": ":",
+      "unique": true
+     },
+     "LIBRARY_PATH": {
+      "separator": ":",
+      "unique": true
+     }
+    }
+   }
+  },
+  "run": {
+   "command": [
+    "/occam/init/ld-linux-x86-64.so.2",
+    "/occam/init/python/bin/python",
+    "/occam/init/init.py"
+   ],
+   "env": {
+    "LD_LIBRARY_PATH": "/occam/init/usr/lib"
+   }
+  },
+  "init": {
+   "copy": [
+    {
+     "source": "etc",
+     "to": "/etc"
+    }
+   ]
+  }
+ },
+ "/QmXYYEnntd11cCbWm9is7aD5fdMs2VuMZcFwrsdgvU89j8/5drHz2buLESzJ67AoJrpRXcQDBbHx3": {
+  "name": "Method Draw",
+  "type": "editor",
+  "license": "MIT",
+  "website": "https://github.com/methodofaction/Method-Draw",
+  "summary": "A JavaScript SVG editor based on SVG-edit.",
+  "authors": [
+   "Mark MacKay",
+   "SVG-edit",
+   "Narendra Sisodiya",
+   "Pavol Rusnak",
+   "Jeff Schiller",
+   "Vidar Hokstad",
+   "Alexis Deveria",
+   "Brett Zamir"
+  ],
+  "install": [
+   {
+    "source": "https://github.com/methodofaction/Method-Draw",
+    "type": "resource",
+    "subtype": "git",
+    "name": "Method-Draw Source Repository",
+    "to": "Method-Draw",
+    "id": "QmR96AD5D7NjiqkZLfqGih8nBietyo4MYhXPDVa3EwCXu2",
+    "uid": "QmZSQH9PL6RNiTLKmBkLSMggA4eG7wAz5WfLrcv7UHRJS3",
+    "revision": "5dt5XVFMxZa3iKEixsdCn2MDdJuAd9"
+   }
+  ],
+  "run": {
+   "file": "Method-Draw/editor/index.html"
+  },
+  "environment": "html",
+  "architecture": "javascript"
+ },
+ "/QmaUzZPvpMaJ7NVDy8bfCKW67ap5zA2i21jTz22YcFfX27/5ds25J7tTfyBeorpLkuDbEhjofzrkn": {
+  "type": "maven-package",
+  "name": "Scala Library",
+  "source": "https://repo1.maven.org/maven2/org/scala-lang/scala-library",
+  "architecture": "x86-64",
+  "environment": "linux",
+  "init": {
+   "link": [
+    {
+     "source": "repository",
+     "to": "/opt/maven/repository"
+    }
+   ]
+  },
+  "build": {
+   "dependencies": [
+    {
+     "id": "QmRt6cEP2MsyxaAvyzHCH9FFwCn3NAtLRzbJdW4tVPBkSV",
+     "type": "language",
+     "name": "python",
+     "version": ">=3.6.1"
+    },
+    {
+     "type": "collection",
+     "name": "build",
+     "id": "QmQ1i5VjdxdU7dWCkhpM7ccVDCBNPX2swTLQSHRiCW8sK1",
+     "version": "1.0",
+     "inject": "ignore"
+    },
+    {
+     "type": "compiler",
+     "name": "g++",
+     "id": "QmVseooVZ4dn2Vo4ikwKXzmBcqDH9avt4YWYtKmujP4KC8",
+     "version": ">5",
+     "inject": "ignore"
+    },
+    {
+     "name": "jdk",
+     "type": "runtime",
+     "id": "QmSFbJjRZzxLkjQyqWVjZszNsUqZxznMuqQJNtYV8uytLQ",
+     "version": ">=1.8.x",
+     "inject": "ignore"
+    },
+    {
+     "type": "application",
+     "name": "maven",
+     "id": "QmeLhgac39E8HNF6rjaej3q8JdXBqaZzfrV87CWvAroztp",
+     "version": "3.x",
+     "inject": "ignore"
+    }
+   ],
+   "install": [
+    {
+     "name": "scala-library 2.13.1 POM",
+     "type": "resource",
+     "subtype": "file",
+     "to": "scala-library-2.13.1.pom",
+     "source": "https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.1/scala-library-2.13.1.pom",
+     "id": "Qmcf2sY14zJpKgawXZPb6FdqggLvTBun1cAVAiodWb2Rk4",
+     "uid": "QmSydJsTJ7gNbg94krfQ4S1VQHaLyLVLVLfoCroWsCikZg",
+     "revision": "QmdDPYfQGw7iYSo5Z14ceugw8CuuSKLeYjMHKdXs3yCuaK"
+    },
+    {
+     "name": "scala-library 2.13.1 Source Distribution",
+     "type": "resource",
+     "subtype": "application/java-archive",
+     "to": "scala-library-2.13.1-sources.jar",
+     "source": "https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.1/scala-library-2.13.1-sources.jar",
+     "actions": {
+      "unpack": "src/main/resources",
+      "postUnpack": "delete"
+     },
+     "id": "QmY1tGYc9jGRfuFnTp15ZwKsvUrFm57iZ3MHGq91ePJP4D",
+     "uid": "QmbQGtDfsQyva7oxV5Egys9qL8macKkBCP3wU89qh3Zy8B",
+     "revision": "QmVhNtNU12tbCYrwoHDWGH6BPG1GFjaCCqPCJG19vsaLjL"
+    }
+   ],
+   "command": [
+    "/usr/bin/python",
+    "{{ paths.mount }}/unpack.py",
+    "scala-library-2.13.1",
+    "org.scala-lang",
+    "scala-library",
+    "2.13.1"
+   ]
+  },
+  "website": "https://www.scala-lang.org/",
+  "license": [
+   "Apache-2.0"
+  ],
+  "summary": "Standard library for the Scala Programming Language",
+  "authors": [
+   "Lightbend, Inc."
+  ],
+  "organization": "LAMP/EPFL"
+ },
+ "/QmRRpVBGAeSAbXd1L1MrNQWXdz623jhKgHdKS85B9aDzSB/5drkEeZxf9nknDQYZ15CrmcgYTBWDR": {
+  "file": "data.json",
+  "name": "Main",
+  "type": "workflow",
+  "root": {
+   "type": "experiment",
+   "id": "QmYKsCuFBTheAd9rAfyaPMVJQmTZfpR3EQHV79VSjhAGAb",
+   "uid": "QmVNDiDmx7WFRREcHAr5sucd38cyKE12PMbgk5NxE47jRr",
+   "name": "foo"
+  },
+  "belongsTo": {
+   "type": "experiment",
+   "id": "QmYKsCuFBTheAd9rAfyaPMVJQmTZfpR3EQHV79VSjhAGAb",
+   "uid": "QmVNDiDmx7WFRREcHAr5sucd38cyKE12PMbgk5NxE47jRr",
+   "name": "foo"
+  }
+ },
+ "/QmQHEkNLVY5Xsbt4DCyMKsTbttt3723jouaHhCTosP3iKb/5dtHs4Bsr7zdyHtGUe7qbZRyQNsBPf": {
+  "type": "python-library",
+  "name": "idna",
+  "source": "https://pypi.python.org/pypi/idna",
+  "environment": "linux",
+  "architecture": "x86-64",
+  "license": "BSD-like",
+  "description": "Internationalized Domain Names in Applications (IDNA)\n=====================================================\n\nSupport for the Internationalised Domain Names in Applications\n(IDNA) protocol as specified in `RFC 5891 <http://tools.ietf.org/html/rfc5891>`_.\nThis is the latest version of the protocol and is sometimes referred to as\n\u201cIDNA 2008\u201d.\n\nThis library also provides support for Unicode Technical Standard 46,\n`Unicode IDNA Compatibility Processing <http://unicode.org/reports/tr46/>`_.\n\nThis acts as a suitable replacement for the \u201cencodings.idna\u201d module that\ncomes with the Python standard library, but only supports the\nold, deprecated IDNA specification (`RFC 3490 <http://tools.ietf.org/html/rfc3490>`_).\n\nBasic functions are simply executed:\n\n.. code-block:: pycon\n\n    # Python 3\n    >>> import idna\n    >>> idna.encode('\u30c9\u30e1\u30a4\u30f3.\u30c6\u30b9\u30c8')\n    b'xn--eckwd4c7c.xn--zckzah'\n    >>> print(idna.decode('xn--eckwd4c7c.xn--zckzah'))\n    \u30c9\u30e1\u30a4\u30f3.\u30c6\u30b9\u30c8\n\n    # Python 2\n    >>> import idna\n    >>> idna.encode(u'\u30c9\u30e1\u30a4\u30f3.\u30c6\u30b9\u30c8')\n    'xn--eckwd4c7c.xn--zckzah'\n    >>> print idna.decode('xn--eckwd4c7c.xn--zckzah')\n    \u30c9\u30e1\u30a4\u30f3.\u30c6\u30b9\u30c8\n\nPackages\n--------\n\nThe latest tagged release version is published in the PyPI repository:\n\n.. image:: https://badge.fury.io/py/idna.svg\n   :target: http://badge.fury.io/py/idna\n\n\nInstallation\n------------\n\nTo install this library, you can use pip:\n\n.. code-block:: bash\n\n    $ pip install idna\n\nAlternatively, you can install the package using the bundled setup script:\n\n.. code-block:: bash\n\n    $ python setup.py install\n\nThis library works with Python 2.7 and Python 3.4 or later.\n\n\nUsage\n-----\n\nFor typical usage, the ``encode`` and ``decode`` functions will take a domain\nname argument and perform a conversion to A-labels or U-labels respectively.\n\n.. code-block:: pycon\n\n    # Python 3\n    >>> import idna\n    >>> idna.encode('\u30c9\u30e1\u30a4\u30f3.\u30c6\u30b9\u30c8')\n    b'xn--eckwd4c7c.xn--zckzah'\n    >>> print(idna.decode('xn--eckwd4c7c.xn--zckzah'))\n    \u30c9\u30e1\u30a4\u30f3.\u30c6\u30b9\u30c8\n\nYou may use the codec encoding and decoding methods using the\n``idna.codec`` module:\n\n.. code-block:: pycon\n\n    # Python 2\n    >>> import idna.codec\n    >>> print u'\u0434\u043e\u043c\u0435\u043d\u0430.\u0438\u0441\u043f\u044b\u0442\u0430\u043d\u0438\u0435'.encode('idna')\n    xn--80ahd1agd.xn--80akhbyknj4f\n    >>> print 'xn--80ahd1agd.xn--80akhbyknj4f'.decode('idna')\n    \u0434\u043e\u043c\u0435\u043d\u0430.\u0438\u0441\u043f\u044b\u0442\u0430\u043d\u0438\u0435\n\nConversions can be applied at a per-label basis using the ``ulabel`` or ``alabel``\nfunctions if necessary:\n\n.. code-block:: pycon\n\n    # Python 2\n    >>> idna.alabel(u'\u6d4b\u8bd5')\n    'xn--0zwm56d'\n\nCompatibility Mapping (UTS #46)\n+++++++++++++++++++++++++++++++\n\nAs described in `RFC 5895 <http://tools.ietf.org/html/rfc5895>`_, the IDNA\nspecification no longer normalizes input from different potential ways a user\nmay input a domain name. This functionality, known as a \u201cmapping\u201d, is now\nconsidered by the specification to be a local user-interface issue distinct\nfrom IDNA conversion functionality.\n\nThis library provides one such mapping, that was developed by the Unicode\nConsortium. Known as `Unicode IDNA Compatibility Processing <http://unicode.org/reports/tr46/>`_,\nit provides for both a regular mapping for typical applications, as well as\na transitional mapping to help migrate from older IDNA 2003 applications.\n\nFor example, \u201cK\u00f6nigsg\u00e4\u00dfchen\u201d is not a permissible label as *LATIN CAPITAL\nLETTER K* is not allowed (nor are capital letters in general). UTS 46 will\nconvert this into lower case prior to applying the IDNA conversion.\n\n.. code-block:: pycon\n\n    # Python 3\n    >>> import idna\n    >>> idna.encode(u'K\u00f6nigsg\u00e4\u00dfchen')\n    ...\n    idna.core.InvalidCodepoint: Codepoint U+004B at position 1 of 'K\u00f6nigsg\u00e4\u00dfchen' not allowed\n    >>> idna.encode('K\u00f6nigsg\u00e4\u00dfchen', uts46=True)\n    b'xn--knigsgchen-b4a3dun'\n    >>> print(idna.decode('xn--knigsgchen-b4a3dun'))\n    k\u00f6nigsg\u00e4\u00dfchen\n\nTransitional processing provides conversions to help transition from the older\n2003 standard to the current standard. For example, in the original IDNA\nspecification, the *LATIN SMALL LETTER SHARP S* (\u00df) was converted into two\n*LATIN SMALL LETTER S* (ss), whereas in the current IDNA specification this\nconversion is not performed.\n\n.. code-block:: pycon\n\n    # Python 2\n    >>> idna.encode(u'K\u00f6nigsg\u00e4\u00dfchen', uts46=True, transitional=True)\n    'xn--knigsgsschen-lcb0w'\n\nImplementors should use transitional processing with caution, only in rare\ncases where conversion from legacy labels to current labels must be performed\n(i.e. IDNA implementations that pre-date 2008). For typical applications\nthat just need to convert labels, transitional processing is unlikely to be\nbeneficial and could produce unexpected incompatible results.\n\n``encodings.idna`` Compatibility\n++++++++++++++++++++++++++++++++\n\nFunction calls from the Python built-in ``encodings.idna`` module are\nmapped to their IDNA 2008 equivalents using the ``idna.compat`` module.\nSimply substitute the ``import`` clause in your code to refer to the\nnew module name.\n\nExceptions\n----------\n\nAll errors raised during the conversion following the specification should\nraise an exception derived from the ``idna.IDNAError`` base class.\n\nMore specific exceptions that may be generated as ``idna.IDNABidiError``\nwhen the error reflects an illegal combination of left-to-right and right-to-left\ncharacters in a label; ``idna.InvalidCodepoint`` when a specific codepoint is\nan illegal character in an IDN label (i.e. INVALID); and ``idna.InvalidCodepointContext``\nwhen the codepoint is illegal based on its positional context (i.e. it is CONTEXTO\nor CONTEXTJ but the contextual requirements are not satisfied.)\n\nBuilding and Diagnostics\n------------------------\n\nThe IDNA and UTS 46 functionality relies upon pre-calculated lookup tables for\nperformance. These tables are derived from computing against eligibility criteria\nin the respective standards. These tables are computed using the command-line\nscript ``tools/idna-data``.\n\nThis tool will fetch relevant tables from the Unicode Consortium and perform the\nrequired calculations to identify eligibility. It has three main modes:\n\n* ``idna-data make-libdata``. Generates ``idnadata.py`` and ``uts46data.py``,\n  the pre-calculated lookup tables using for IDNA and UTS 46 conversions. Implementors\n  who wish to track this library against a different Unicode version may use this tool\n  to manually generate a different version of the ``idnadata.py`` and ``uts46data.py``\n  files.\n\n* ``idna-data make-table``. Generate a table of the IDNA disposition\n  (e.g. PVALID, CONTEXTJ, CONTEXTO) in the format found in Appendix B.1 of RFC\n  5892 and the pre-computed tables published by `IANA <http://iana.org/>`_.\n\n* ``idna-data U+0061``. Prints debugging output on the various properties\n  associated with an individual Unicode codepoint (in this case, U+0061), that are\n  used to assess the IDNA and UTS 46 status of a codepoint. This is helpful in debugging\n  or analysis.\n\nThe tool accepts a number of arguments, described using ``idna-data -h``. Most notably,\nthe ``--version`` argument allows the specification of the version of Unicode to use\nin computing the table data. For example, ``idna-data --version 9.0.0 make-libdata``\nwill generate library data against Unicode 9.0.0.\n\nNote that this script requires Python 3, but all generated library data will work\nin Python 2.7.\n\n\nTesting\n-------\n\nThe library has a test suite based on each rule of the IDNA specification, as\nwell as tests that are provided as part of the Unicode Technical Standard 46,\n`Unicode IDNA Compatibility Processing <http://unicode.org/reports/tr46/>`_.\n\nThe tests are run automatically on each commit at Travis CI:\n\n.. image:: https://travis-ci.org/kjd/idna.svg?branch=master\n   :target: https://travis-ci.org/kjd/idna\n",
+  "summary": "Internationalized Domain Names in Applications (IDNA)",
+  "website": "https://github.com/kjd/idna",
+  "authors": [
+   "Kim Davies"
+  ],
+  "build": {
+   "install": [
+    {
+     "type": "resource",
+     "subtype": "application/gzip",
+     "source": "https://files.pythonhosted.org/packages/ad/13/eb56951b6f7950cadb579ca166e448ba77f9d24efc03edd7e55fa57d04b7/idna-2.8.tar.gz",
+     "name": "Python Source for idna 2.8",
+     "to": "idna-2.8.tar.gz",
+     "actions": {
+      "unpack": "."
+     },
+     "id": "QmVrSUAUL4uJq3rxbyQAzpHUGGCA1KiCYTqxZRXdgZwWV6",
+     "uid": "QmQDSeyrdwUP8opVXW7ocFTpF1YzErP1UawCLwwBQjsLS7",
+     "revision": "QmbVBmwE6DNwcn4Uvtq2fgfPZ1hdJADtq65HR1EQ6Z9R5Y"
+    }
+   ],
+   "dependencies": [
+    {
+     "id": "QmPxP6yHYWbSA3z3sFVQVp67xUmAmKAD7kLUCc7j3JJjvi",
+     "type": "library",
+     "name": "png",
+     "version": "1.x"
+    },
+    {
+     "type": "collection",
+     "name": "build",
+     "id": "QmQ1i5VjdxdU7dWCkhpM7ccVDCBNPX2swTLQSHRiCW8sK1",
+     "version": "1.0"
+    },
+    {
+     "type": "application",
+     "name": "unzip",
+     "id": "QmPvYt44E95j78i7MSi3rJrMZ6K3Jyj677Yg3Q8wruEcKE",
+     "version": "6.x"
+    },
+    {
+     "type": "compiler",
+     "name": "g++",
+     "id": "QmVseooVZ4dn2Vo4ikwKXzmBcqDH9avt4YWYtKmujP4KC8",
+     "version": ">5",
+     "inject": "ignore"
+    },
+    {
+     "id": "QmdUU5XHDKcTod2ytjZM4JmgFF8sdbzKipkfco2uF83oe1",
+     "type": "python-library",
+     "name": "wheel",
+     "version": ">=0"
+    },
+    {
+     "id": "QmegMs97uVQf6vC2bDZHKcpUTWMewo6m62PqdogFYqUL1d",
+     "type": "python-library",
+     "name": "pytoml",
+     "version": ">=0"
+    },
+    {
+     "id": "QmRt6cEP2MsyxaAvyzHCH9FFwCn3NAtLRzbJdW4tVPBkSV",
+     "type": "language",
+     "name": "python",
+     "version": ">=3.6.1",
+     "lock": "minor"
+    }
+   ],
+   "command": [
+    "/bin/sh",
+    "{{ paths.mount }}/build.sh",
+    "idna-2.8/",
+    "3"
+   ]
+  },
+  "init": {
+   "link": [
+    {
+     "source": "usr",
+     "to": "/usr"
+    }
+   ]
+  }
+ }
+}
